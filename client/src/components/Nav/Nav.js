@@ -1,11 +1,18 @@
 import React from "react";
+import './Nav.css';
+
 
 const Nav = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div>
+  <nav className="navbar navbar-expand-lg navbar-dark NavCSS">
+   <a className="navbar-brand" href="#">
+    <img src="./Nav/AR.PNG" width="30" height="30" alt=""></img>
+  </a>
     <a className="navbar-brand" href="/">
-      React Reading List
+      Welcome to Accessory Research
     </a>
   </nav>
+  </div>
 );
 
 export default Nav;
