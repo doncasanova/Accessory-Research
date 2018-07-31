@@ -4,13 +4,11 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import AmazonB from "./components/AmazonB";
 
 const App = () => (
   <Router>
     <div>
       <Nav />
-      <AmazonB/>
       <Switch>
         <Route exact path="/" component={Books} />
         <Route exact path="/books" component={Books} />
