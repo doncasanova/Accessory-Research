@@ -24,6 +24,30 @@ const customerSeed = [
   }
 ];
 
+
+const productSeed = [
+  {
+    sku: "C108-Q8",
+    name: "AR Static B Gone Heavy Duty",
+    description: "Formulated for today's Hi-tech graphic arts, digital photo processing and printing equipment. Used where machinery and processes generate static electricity.",
+    features: "Kills static on contact. Once applied to a work station or machine it lasts for hours.",
+    size: "quart- 8 per case",
+    price: 100.50,
+    images:["/public/images/HeavyDuty.jpg"],
+    stock: 100
+  },
+  {
+    sku: "C108-S",
+    name: "AR Static B Gone Heavy Duty",
+    description: "Formulated for today's Hi-tech graphic arts, digital photo processing and printing equipment. Used where machinery and processes generate static electricity.",
+    features: "Kills static on contact. Once applied to a work station or machine it lasts for hours.",
+    size: "8oz spray bottle- 25 per casee",
+    price: 100.50,
+    images:["/public/images/HeavyDuty.jpg"],
+    stock: 100
+  }
+];
+
 db.Customer
   .remove({})
   .then(() => db.Customer.collection.insertMany(customerSeed))
@@ -35,3 +59,15 @@ db.Customer
     console.error(err);
     process.exit(1);
   });
+
+  db.Product
+    .remove({})
+    .then(() => db.Product.collection.insertMany(productSeed))
+    .then(data => {
+      console.log(data.result.n + " records inserted!");
+      process.exit(0);
+    })
+    .catch(err => {
+      console.error(err);
+      process.exit(1);
+    });
