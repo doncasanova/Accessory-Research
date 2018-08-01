@@ -1,23 +1,19 @@
 import React from "react";
 import "./AmazonB.css";
 
-var AmazoneAdd = () => ({
-  amazoneScript: function() {
-    return '<div class="alignleft"> <script type="text/javascript"> amzn_assoc_ad_type = "banner"; amzn_assoc_marketplace = "amazon"; amzn_assoc_region = "US"; amzn_assoc_placement = "assoc_banner_placement_default"; amzn_assoc_campaigns = "kuft"; amzn_assoc_banner_type = "category"; amzn_assoc_p = "48"; amzn_assoc_isresponsive = "false"; amzn_assoc_banner_id = ID; amzn_assoc_width = "728"; amzn_assoc_height = "90"; amzn_assoc_tracking_id = "staticbgone-20"; amzn_assoc_linkid = "c4ff4fad646f34f210308ce0f8c92ca9"; </script> <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script> </div>'
-  },
-  render: function() {
-    return (
-		<div>
-	  
-    <div className="col-3 amazonAdd float-right">
-		  
+const amazoneScript = function () {
+  return '<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=ed19930a4ceab84638372e0e78905399&t=staticbgone-20&tracking_id=staticbgone-20" width="180" height="150" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>'
+}
 
-   Note: I would like to add a Amazon ad here and if you go to AmazonB.js I have script that I got from Amazon.
-		
-	
-    </div>
+var AmazoneAdd = () => ({
+
+  render: function () {
+    return (
+      <div>
+
         <div className='advertisement'>
-          <div dangerouslySetInnerHTML={{__html: this.amazoneScript()}}></div> 
+        xxx
+          <div dangerouslySetInnerHTML={{ __html: amazoneScript() }}></div>
         </div>
       </div>
     );
