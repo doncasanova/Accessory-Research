@@ -58,8 +58,7 @@ class Books extends Component {
         <Row>
           <Col size="md-12 sm-12">
             <Jumbotron>
-            <AmazonADD/>
-              <Image/>
+          this is the index
             </Jumbotron>
           </Col>
         </Row>

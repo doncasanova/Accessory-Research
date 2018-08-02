@@ -10,9 +10,7 @@ var AmazoneAdd = () => ({
   render: function () {
     return (
       <div>
-
         <div className='advertisement'>
-        xxx
           <div dangerouslySetInnerHTML={{ __html: amazoneScript() }}></div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Books from "./pages/Books";
-import Detail from "./pages/Detail";
+import Products from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import AmazoneAdd from "./components/AmazonB"
 import PaypalButton from './components/PaypalButton.js';
-
+console.log(Products)
 const CLIENT = {
   sandbox: 'AdOGtOUu6PM3rYwSPn9R-Q9Fjb2DTKhIOOIlL3pKi-QLT2KmpTa8xPriasyBqeyWdmSia8swrODxDxc9',
   production: 'xxxXXX',
@@ -31,12 +31,13 @@ class App extends React.Component {
 
       <Router>
         <div>
-          <Nav />
-          <AmazoneAdd />
+          <Nav> 
+		  hello
+		  </Nav>
           <Switch>
             <Route exact path="/" component={Books} />
-            <Route exact path="/books" component={Books} />
-            <Route exact path="/books/:id" component={Detail} />
+            <Route exact path="/Products" component={Products} />
+            <Route exact path="/books/:id" component={Products} />
             <Route component={NoMatch} />
           </Switch>
           <PaypalButton
