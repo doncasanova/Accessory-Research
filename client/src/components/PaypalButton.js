@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import paypal from 'paypal-checkout';
-import scriptLoader from 'react-async-script-loader';
+
 
 class PaypalButton extends React.Component {
 
