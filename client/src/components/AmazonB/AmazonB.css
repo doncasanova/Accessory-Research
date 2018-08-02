@@ -1,4 +1,6 @@
-.amazonAdd, .advertisement {
-    background-color: white;
-    color: black
+
+iframe {
+    position: relative;
+    float: right;
+    margin: 2px
 }

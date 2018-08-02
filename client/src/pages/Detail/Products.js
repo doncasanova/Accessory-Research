@@ -15,7 +15,7 @@ class Products extends Component {
             <Jumbotron>
             hello your in the products page
 			
-			<images/>
+            <Image/>
             </Jumbotron>
           </Col>
         </Row>

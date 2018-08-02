@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import Image from "../../components/images"
-
+import AmazonAdd from "../../components/AmazonB"
 class Books extends Component {
   state = {
     books: [],
@@ -57,8 +56,8 @@ class Books extends Component {
         <Row>
           <Col size="md-12 sm-12">
             <Jumbotron>
-              <Image/>
-
+            <AmazonAdd/>
+           index page
             </Jumbotron>
           </Col>
         </Row>
