@@ -1,8 +1,8 @@
 import React from "react";
-import "./AmazonB.css";
+// import "./AmazonB.css";
 
 const amazoneScript = function () {
-  return '<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=9&l=ez&f=ifr&linkID=ed19930a4ceab84638372e0e78905399&t=staticbgone-20&tracking_id=staticbgone-20" width="180" height="150" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>'
+  return '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=staticbgone-20&marketplace=amazon&region=US&placement=B0001M6K24&asins=B0001M6K24&linkId=276abe66e87217b07a70f78d777b4e8b&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe><iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=staticbgone-20&marketplace=amazon&region=US&placement=B0143IISD0&asins=B0143IISD0&linkId=0bcb16428943e529b1caf368357e371e&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
 }
 
 var AmazoneAdd = () => ({
