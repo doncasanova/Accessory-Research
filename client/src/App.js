@@ -37,7 +37,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Books} />
             <Route exact path="/Products" component={Products} />
-            <Route exact path="/books/:id" component={Products} />
+            <Route exact path="/Products/:id" component={Products} />
             <Route component={NoMatch} />
           </Switch>
           <PaypalButton
