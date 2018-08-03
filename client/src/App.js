@@ -6,6 +6,9 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import AmazoneAdd from "./components/AmazonB"
 import PaypalButton from './components/PaypalButton.js';
+
+
+
 console.log(Products)
 const CLIENT = {
   sandbox: 'AdOGtOUu6PM3rYwSPn9R-Q9Fjb2DTKhIOOIlL3pKi-QLT2KmpTa8xPriasyBqeyWdmSia8swrODxDxc9',
