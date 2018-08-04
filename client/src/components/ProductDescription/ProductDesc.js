@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../Jumbotron";
 import { Col, Row, Container } from "../Grid";
 import ShoppingCart from '../PayPal/shoppingCart.js';
+import ViewShoppingCart from '../PayPal/ViewShoppingCart.js';
 import './ProductDesc.css';
 
 
@@ -13,6 +14,7 @@ class FilmCleaner extends Component {
           <Col size="md-12 sm-12">
             <Jumbotron>
               <ShoppingCart />
+              <ViewShoppingCart />
               <div className = "productDesc border border-white rounded-4">
                 Completely safe for cleaning any film base, emulsion and prints.
     
