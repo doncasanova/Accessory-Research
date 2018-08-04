@@ -4,12 +4,9 @@ import Books from "./pages/Books";
 import Products from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import AmazoneAdd from "./components/AmazonB"
-import PaypalButton from './components/PaypalButton.js';
+import PaypalButton from './components/PayPal/PaypalButton.js';
+import FilmCleaner from './components/ProductDescription/ProductDesc.js';
 
-
-
-console.log(Products)
 const CLIENT = {
   sandbox: 'AdOGtOUu6PM3rYwSPn9R-Q9Fjb2DTKhIOOIlL3pKi-QLT2KmpTa8xPriasyBqeyWdmSia8swrODxDxc9',
   production: 'xxxXXX',
@@ -40,6 +37,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Books} />
             <Route exact path="/Products" component={Products} />
+            <Route exact path="/ProductDescription" component={FilmCleaner} />
             <Route exact path="/Products/:id" component={Products} />
             <Route component={NoMatch} />
           </Switch>

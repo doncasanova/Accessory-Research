@@ -9,10 +9,6 @@ const Image = () => (
         <img className="m-2" src="http://accessoryresearch.com/Screen.JPG" Height = "200px" alt="Screan Cleaner"></img>
         <img className="m-2" src="http://accessoryresearch.com/Heavy%20Duty.JPG" Height = "200px" alt="Heavy Cleaner"></img>
         <img className="m-2" src="http://accessoryresearch.com/Glass%20Cleaner.JPG" Height = "200px" alt="Glass Cleaner"></img>
-        
-        <div>
-        can't figure out how to import a local image. I created an image folder in the components folder
-        </div>
     </div>
   );
   

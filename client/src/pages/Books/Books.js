@@ -3,6 +3,7 @@ import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import AmazonAdd from "../../components/AmazonB"
+import './Books.css';
 class Books extends Component {
   state = {
     books: [],
@@ -57,7 +58,7 @@ class Books extends Component {
           <Col size="md-12 sm-12">
             <Jumbotron>
             <AmazonAdd/>
-           index page
+            <div><p className = "AR2-css">AR</p></div>
             </Jumbotron>
           </Col>
         </Row>
