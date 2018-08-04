@@ -1,0 +1,100 @@
+2018-08-01T13:15:39.299482+00:00 heroku[web.1]: State changed from starting to up
+2018-08-01T13:15:40.567115+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=23d27ab9-b291-4536-be9e-87a7d7857f51 fwd="198.140.255.129" dyno=web.1 connect=0ms service=3ms status=499 bytes= protocol=https
+2018-08-01T13:15:40.566844+00:00 app[web.1]: 10.165.106.235 - - [01/Aug/2018:13:15:40 +0000] "GET / HTTP/1.1" 404 191 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-01T13:48:49.786847+00:00 heroku[web.1]: Idling
+2018-08-01T13:48:49.787605+00:00 heroku[web.1]: State changed from up to down
+2018-08-01T13:48:50.562568+00:00 app[web.1]: Going down, terminating child processes...
+2018-08-01T13:48:50.542276+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-08-01T13:48:50.713178+00:00 heroku[web.1]: Process exited with status 0
+2018-08-04T14:58:08.000000+00:00 app[api]: Build started by user ethanjuan@yahoo.com
+2018-08-04T14:59:43.015141+00:00 app[api]: Deploy 8a044514 by user ethanjuan@yahoo.com
+2018-08-04T14:59:43.015141+00:00 app[api]: Release v6 created by user ethanjuan@yahoo.com
+2018-08-04T14:59:44.000000+00:00 app[api]: Build succeeded
+2018-08-04T14:59:44.909672+00:00 heroku[web.1]: State changed from down to starting
+2018-08-04T15:00:05.661638+00:00 heroku[web.1]: Starting process with command `bin/boot`
+2018-08-04T15:00:08.423802+00:00 app[web.1]: Starting log redirection...
+2018-08-04T15:00:08.424119+00:00 app[web.1]: Starting nginx...
+2018-08-04T15:00:10.003509+00:00 heroku[web.1]: State changed from starting to up
+2018-08-04T15:01:33.440952+00:00 heroku[router]: at=info method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=70f345d1-5657-4213-a0a9-f0070b778f71 fwd="131.212.248.186" dyno=web.1 connect=1ms service=3ms status=404 bytes=403 protocol=https
+2018-08-04T15:01:33.439655+00:00 app[web.1]: 10.102.187.25 - - [04/Aug/2018:15:01:33 +0000] "GET / HTTP/1.1" 404 191 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T15:01:33.771895+00:00 app[web.1]: 10.102.187.25 - - [04/Aug/2018:15:01:33 +0000] "GET /favicon.ico HTTP/1.1" 404 191 "https://calm-sands-97190.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T15:01:33.773203+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=calm-sands-97190.herokuapp.com request_id=6964e573-f718-4d96-ba0c-aee6bbe22591 fwd="131.212.248.186" dyno=web.1 connect=1ms service=2ms status=404 bytes=403 protocol=https
+2018-08-04T15:11:17.691507+00:00 heroku[router]: at=info method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=cf5c8ee9-281f-4b2a-9936-1d358290a0f1 fwd="131.212.248.186" dyno=web.1 connect=1ms service=3ms status=404 bytes=403 protocol=https
+2018-08-04T15:11:17.690682+00:00 app[web.1]: 10.102.187.25 - - [04/Aug/2018:15:11:17 +0000] "GET / HTTP/1.1" 404 191 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T15:12:31.838170+00:00 heroku[router]: at=info method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=de103279-7ef1-427d-91fa-94ee199eebab fwd="131.212.248.186" dyno=web.1 connect=1ms service=2ms status=404 bytes=403 protocol=https
+2018-08-04T15:12:31.850024+00:00 app[web.1]: 10.43.206.169 - - [04/Aug/2018:15:12:31 +0000] "GET / HTTP/1.1" 404 191 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T15:17:15.834799+00:00 heroku[web.1]: Restarting
+2018-08-04T15:17:15.835268+00:00 heroku[web.1]: State changed from up to starting
+2018-08-04T15:17:15.359771+00:00 app[api]: Set NODE_ENV config vars by user ethanjuan@yahoo.com
+2018-08-04T15:17:15.359771+00:00 app[api]: Release v7 created by user ethanjuan@yahoo.com
+2018-08-04T15:17:16.824993+00:00 app[web.1]: Going down, terminating child processes...
+2018-08-04T15:17:16.802762+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-08-04T15:17:16.940020+00:00 heroku[web.1]: Process exited with status 0
+2018-08-04T15:17:27.560584+00:00 heroku[web.1]: Starting process with command `bin/boot`
+2018-08-04T15:17:30.436555+00:00 app[web.1]: Starting nginx...
+2018-08-04T15:17:30.436149+00:00 app[web.1]: Starting log redirection...
+2018-08-04T15:17:31.363419+00:00 heroku[web.1]: State changed from starting to up
+2018-08-04T15:22:34.000000+00:00 app[api]: Build started by user ethanjuan@yahoo.com
+2018-08-04T15:24:00.010004+00:00 app[api]: Deploy 7e976a2e by user ethanjuan@yahoo.com
+2018-08-04T15:24:00.010004+00:00 app[api]: Release v8 created by user ethanjuan@yahoo.com
+2018-08-04T15:24:00.226810+00:00 heroku[web.1]: Restarting
+2018-08-04T15:24:00.227329+00:00 heroku[web.1]: State changed from up to starting
+2018-08-04T15:24:01.217093+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-08-04T15:24:01.232139+00:00 app[web.1]: Going down, terminating child processes...
+2018-08-04T15:24:01.324164+00:00 heroku[web.1]: Process exited with status 0
+2018-08-04T15:24:01.000000+00:00 app[api]: Build succeeded
+2018-08-04T15:24:11.022575+00:00 heroku[web.1]: Starting process with command `bin/boot`
+2018-08-04T15:24:13.836721+00:00 app[web.1]: Starting log redirection...
+2018-08-04T15:24:13.837078+00:00 app[web.1]: Starting nginx...
+2018-08-04T15:24:14.918919+00:00 heroku[web.1]: State changed from starting to up
+2018-08-04T15:34:16.929731+00:00 app[web.1]: 10.45.224.215 - - [04/Aug/2018:15:34:16 +0000] "GET / HTTP/1.1" 404 191 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T15:34:16.929891+00:00 heroku[router]: at=info method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=bfe76bb4-4eb9-47d4-a685-234898baa2d0 fwd="131.212.248.186" dyno=web.1 connect=1ms service=2ms status=404 bytes=403 protocol=https
+2018-08-04T15:40:54.701486+00:00 heroku[router]: at=info method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=cf99447c-0004-44a7-b971-85cfb549c518 fwd="131.212.248.186" dyno=web.1 connect=1ms service=2ms status=404 bytes=403 protocol=https
+2018-08-04T15:40:54.702710+00:00 app[web.1]: 10.182.117.207 - - [04/Aug/2018:15:40:54 +0000] "GET / HTTP/1.1" 404 191 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:14:25.407736+00:00 heroku[web.1]: Idling
+2018-08-04T16:14:25.408373+00:00 heroku[web.1]: State changed from up to down
+2018-08-04T16:14:26.104100+00:00 app[web.1]: Going down, terminating child processes...
+2018-08-04T16:14:26.093786+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-08-04T16:14:26.175369+00:00 heroku[web.1]: Process exited with status 0
+2018-08-04T16:25:58.000000+00:00 app[api]: Build started by user ethanjuan@yahoo.com
+2018-08-04T16:27:22.313082+00:00 app[api]: Release v9 created by user ethanjuan@yahoo.com
+2018-08-04T16:27:23.490139+00:00 heroku[web.1]: State changed from down to starting
+2018-08-04T16:27:22.313082+00:00 app[api]: Deploy a7e38e1e by user ethanjuan@yahoo.com
+2018-08-04T16:27:24.000000+00:00 app[api]: Build succeeded
+2018-08-04T16:27:36.381280+00:00 heroku[web.1]: Starting process with command `bin/boot`
+2018-08-04T16:27:40.097749+00:00 app[web.1]: Starting log redirection...
+2018-08-04T16:27:40.098015+00:00 app[web.1]: Starting nginx...
+2018-08-04T16:27:40.831290+00:00 heroku[web.1]: State changed from starting to up
+2018-08-04T16:28:46.032489+00:00 heroku[router]: at=info method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=c21f7550-f272-446d-9773-f15e2708ec92 fwd="131.212.248.186" dyno=web.1 connect=0ms service=5ms status=404 bytes=403 protocol=https
+2018-08-04T16:28:46.141935+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=calm-sands-97190.herokuapp.com request_id=b73df3b6-d7e4-4f63-98cb-4416a0b026dc fwd="131.212.248.186" dyno=web.1 connect=0ms service=4ms status=404 bytes=403 protocol=https
+2018-08-04T16:28:46.035183+00:00 app[web.1]: 10.37.176.161 - - [04/Aug/2018:16:28:46 +0000] "GET / HTTP/1.1" 404 191 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:28:46.141519+00:00 app[web.1]: 10.37.176.161 - - [04/Aug/2018:16:28:46 +0000] "GET /favicon.ico HTTP/1.1" 404 191 "https://calm-sands-97190.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:34:38.000000+00:00 app[api]: Build started by user ethanjuan@yahoo.com
+2018-08-04T16:36:00.905952+00:00 app[api]: Deploy 29961e64 by user ethanjuan@yahoo.com
+2018-08-04T16:36:00.905952+00:00 app[api]: Release v10 created by user ethanjuan@yahoo.com
+2018-08-04T16:36:01.115292+00:00 heroku[web.1]: Restarting
+2018-08-04T16:36:01.117145+00:00 heroku[web.1]: State changed from up to starting
+2018-08-04T16:36:02.253884+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-08-04T16:36:02.281650+00:00 app[web.1]: Going down, terminating child processes...
+2018-08-04T16:36:02.363032+00:00 heroku[web.1]: Process exited with status 0
+2018-08-04T16:36:02.000000+00:00 app[api]: Build succeeded
+2018-08-04T16:36:13.903972+00:00 heroku[web.1]: Starting process with command `bin/boot`
+2018-08-04T16:36:16.953366+00:00 app[web.1]: Starting log redirection...
+2018-08-04T16:36:16.954143+00:00 app[web.1]: Starting nginx...
+2018-08-04T16:36:17.758201+00:00 heroku[web.1]: State changed from starting to up
+2018-08-04T16:36:18.874854+00:00 heroku[router]: at=info method=GET path="/" host=calm-sands-97190.herokuapp.com request_id=722fa081-2f97-408c-aa1e-cc1a60535d6d fwd="131.212.251.132" dyno=web.1 connect=0ms service=3ms status=404 bytes=403 protocol=http
+2018-08-04T16:36:18.876152+00:00 app[web.1]: 10.69.208.146 - - [04/Aug/2018:16:36:18 +0000] "GET / HTTP/1.1" 404 191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:36:19.197006+00:00 app[web.1]: 10.69.208.146 - - [04/Aug/2018:16:36:19 +0000] "GET /favicon.ico HTTP/1.1" 404 191 "http://calm-sands-97190.herokuapp.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:36:19.196478+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=calm-sands-97190.herokuapp.com request_id=9fcbe9fa-56f1-4963-84c5-cee38d56b68d fwd="131.212.251.132" dyno=web.1 connect=0ms service=32ms status=404 bytes=403 protocol=http
+2018-08-04T16:39:25.414001+00:00 app[web.1]: 10.7.158.42 - - [04/Aug/2018:16:39:25 +0000] "GET /products HTTP/1.1" 404 191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:39:25.411615+00:00 heroku[router]: at=info method=GET path="/products" host=calm-sands-97190.herokuapp.com request_id=79764f0e-899f-4d54-9e3b-313e73d3aa0a fwd="131.212.251.132" dyno=web.1 connect=1ms service=4ms status=404 bytes=403 protocol=http
+2018-08-04T16:39:53.568605+00:00 app[web.1]: 10.7.158.42 - - [04/Aug/2018:16:39:53 +0000] "GET /Products HTTP/1.1" 404 191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:39:53.566941+00:00 heroku[router]: at=info method=GET path="/Products" host=calm-sands-97190.herokuapp.com request_id=705f1c0e-1882-4279-8b84-67fa5805902e fwd="131.212.251.132" dyno=web.1 connect=1ms service=4ms status=404 bytes=403 protocol=http
+2018-08-04T16:39:56.248349+00:00 app[web.1]: 10.7.158.42 - - [04/Aug/2018:16:39:56 +0000] "GET /products HTTP/1.1" 404 191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:39:56.248655+00:00 heroku[router]: at=info method=GET path="/products" host=calm-sands-97190.herokuapp.com request_id=273c7cff-f792-4d4c-9fad-e0c893a1912b fwd="131.212.251.132" dyno=web.1 connect=1ms service=3ms status=404 bytes=403 protocol=http
+2018-08-04T16:42:24.573396+00:00 heroku[router]: at=info method=GET path="/api" host=calm-sands-97190.herokuapp.com request_id=aadde57d-4bbb-4376-a1cf-3a1cd0f279b4 fwd="131.212.251.132" dyno=web.1 connect=0ms service=1ms status=404 bytes=403 protocol=http
+2018-08-04T16:42:24.577218+00:00 app[web.1]: 10.182.60.78 - - [04/Aug/2018:16:42:24 +0000] "GET /api HTTP/1.1" 404 191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:42:56.447836+00:00 heroku[router]: at=info method=GET path="/api/products" host=calm-sands-97190.herokuapp.com request_id=39dc6ea1-1c16-4a4e-9ac0-23d9c947011d fwd="131.212.251.132" dyno=web.1 connect=0ms service=2ms status=404 bytes=403 protocol=http
+2018-08-04T16:42:56.451612+00:00 app[web.1]: 10.182.60.78 - - [04/Aug/2018:16:42:56 +0000] "GET /api/products HTTP/1.1" 404 191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+2018-08-04T16:43:00.154508+00:00 heroku[router]: at=info method=GET path="/products" host=calm-sands-97190.herokuapp.com request_id=fb2746e7-0216-4241-a25e-37cb2df19d64 fwd="131.212.251.132" dyno=web.1 connect=1ms service=2ms status=404 bytes=403 protocol=http
+2018-08-04T16:43:00.164618+00:00 app[web.1]: 10.182.60.78 - - [04/Aug/2018:16:43:00 +0000] "GET /products HTTP/1.1" 404 191 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
