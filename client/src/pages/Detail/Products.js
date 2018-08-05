@@ -37,7 +37,7 @@ class Products extends Component {
         {/* render each product */}
         {
           this.state.products.map((product) => (
-            <Product id={product._id} sku={product.sku} name={product.name} image={product.images[0]} description={product.description} features={product.features} size={product.size} price={product.price} />
+            <Product id={product._id} sku={product.sku} name={product.name} image={product.images[0]} description={product.description} features={product.features} size={product.size} price={product.price} shipping_weight={product.shipping_weight} />
           )
           )
         }

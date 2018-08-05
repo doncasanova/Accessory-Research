@@ -37,18 +37,20 @@ const productSeed = [
     size: "quart- 8 per case",
     price: 100.50,
     images: ["/images/HeavyDuty.jpg"],
-    stock: 100
+    stock: 100,
+    shipping_weight: {value: 20, units: "lbs"}
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f048"),
     sku: "C108-S",
-    name: "AR Static B Gone Heavy Duty (Spray Bottle)",
+    name: "AR Static B Gone Heavy Duty (Spray Bottles)",
     description: "Formulated for today's Hi-tech graphic arts, digital photo processing and printing equipment. Used where machinery and processes generate static electricity.",
     features: "Kills static on contact. Once applied to a work station or machine it lasts for hours.",
     size: "8oz spray bottle- 25 per case",
     price: 100.50,
     images: ["/images/HeavyDuty.jpg"],
-    stock: 100
+    stock: 100,
+    shipping_weight: {value: 20, units: "lbs"}
   }
 ];
 

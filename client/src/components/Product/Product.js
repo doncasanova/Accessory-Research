@@ -10,6 +10,7 @@ const Product = (props) => (
             <p> {props.description} </p>
             <p>Features: {props.features}</p>
             <p>Size: {props.size} <span>Price: ${Number.parseFloat(props.price).toFixed(2)}</span></p>
+            <p>Shipping Weight: {props.shipping_weight.value}{props.shipping_weight.units}</p>
         </div>
     </div>
 )
