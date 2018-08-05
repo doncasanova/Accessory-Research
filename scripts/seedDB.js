@@ -31,23 +31,23 @@ const productSeed = [
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f047"),
     sku: "C108-Q8",
-    name: "AR Static B Gone Heavy Duty",
+    name: "AR Static B Gone Heavy Duty (Quart Cans)",
     description: "Formulated for today's Hi-tech graphic arts, digital photo processing and printing equipment. Used where machinery and processes generate static electricity.",
     features: "Kills static on contact. Once applied to a work station or machine it lasts for hours.",
     size: "quart- 8 per case",
     price: 100.50,
-    images: ["/public/images/HeavyDuty.jpg"],
+    images: ["/images/HeavyDuty.jpg"],
     stock: 100
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f048"),
     sku: "C108-S",
-    name: "AR Static B Gone Heavy Duty",
+    name: "AR Static B Gone Heavy Duty (Spray Bottle)",
     description: "Formulated for today's Hi-tech graphic arts, digital photo processing and printing equipment. Used where machinery and processes generate static electricity.",
     features: "Kills static on contact. Once applied to a work station or machine it lasts for hours.",
-    size: "8oz spray bottle- 25 per casee",
+    size: "8oz spray bottle- 25 per case",
     price: 100.50,
-    images: ["/public/images/HeavyDuty.jpg"],
+    images: ["/images/HeavyDuty.jpg"],
     stock: 100
   }
 ];
