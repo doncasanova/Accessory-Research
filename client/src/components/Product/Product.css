@@ -1,0 +1,9 @@
+.Product {
+    width: 300px;
+    float: left;
+    background: #bbb;
+}
+
+.product-image {
+    width: 200px;
+}
