@@ -57,7 +57,6 @@ class Books extends Component {
         <Row>
           <Col size="md-12 sm-12">
             <Jumbotron>
-            <AmazonAdd/>
             <div><p className = "AR2-css">AR</p></div>
             </Jumbotron>
           </Col>

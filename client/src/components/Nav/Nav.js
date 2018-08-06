@@ -30,7 +30,7 @@ const Nav = () => (
         </div>
       </li>
       <li className="nav-item">
-        <a className="nav-link disabled" href="/">Enabled</a>
+        <a className="nav-link " href="/">Enabled</a>
       </li>
     </ul>
     <form className="form-inline my-2 my-lg-0">

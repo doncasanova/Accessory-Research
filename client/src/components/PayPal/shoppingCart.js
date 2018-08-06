@@ -4,7 +4,6 @@ import React from "react";
 
 const ShoppingCart = () => (
   <div>
-    <img className="m-2" src="http://accessoryresearch.com/Film%20Cleaner.JPG" height="200px" alt="Film Cleaner"></img>
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
 

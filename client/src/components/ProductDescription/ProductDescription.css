@@ -1,0 +1,16 @@
+.productDesc {
+    background: #bbb;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    color: black;
+    margin: 20px;
+}
+.productImage {
+    background: #bbb;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    margin: 20px;
+
+}

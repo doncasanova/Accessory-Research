@@ -23,24 +23,23 @@ class Products extends Component {
   };
 
   render() {
-    return ( 
+    return (
+
       <Container fluid>
-        <Row>
-          <Col size="md-12 sm-12">
-            <Jumbotron>
-                {/* render each product */}
-        {
-          this.state.products.map((product) => (
-            <Product key={product._id} id={product._id} sku={product.sku} name={product.name} image={product.images[0]} description={product.description} features={product.features} size={product.size} price={product.price} shipping_weight={product.shipping_weight} />
-          )
-          )
-        }
-             
-            </Jumbotron>
-          </Col>
-        </Row>
+        <Jumbotron>
+          <Row>
+              {/* render each product */}
+              {
+                this.state.products.map((product) => (
+                  <Product key={product._id} id={product._id} sku={product.sku} name={product.name} image={product.images[0]} description={product.description} features={product.features} size={product.size} price={product.price} shipping_weight={product.shipping_weight} />
+                )
+                )
+              }
+          </Row>
+        </Jumbotron>
       </Container>
-      );
+
+    );
   }
 }
 

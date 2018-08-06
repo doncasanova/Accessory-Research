@@ -5,7 +5,7 @@ import Products from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import PaypalButton from './components/PayPal/PaypalButton.js';
-import FilmCleaner from './components/ProductDescription/ProductDesc.js';
+import ProductDescription from './components/ProductDescription/ProductDescription.js';
 
 const CLIENT = {
   sandbox: 'AdOGtOUu6PM3rYwSPn9R-Q9Fjb2DTKhIOOIlL3pKi-QLT2KmpTa8xPriasyBqeyWdmSia8swrODxDxc9',
@@ -37,19 +37,19 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Books} />
             <Route exact path="/Products" component={Products} />
-            <Route exact path="/ProductDescription" component={FilmCleaner} />
-            <Route exact path="/Products/:id" component={FilmCleaner} />
+            <Route exact path="/ProductDescription" component={ProductDescription} />
+            <Route exact path="/Products/:id" component={ProductDescription} />
             <Route component={NoMatch} />
           </Switch>
-          <PaypalButton
+          {/* <PaypalButton
             client={CLIENT}
             env={ENV}
             commit={true}
             currency={'USD'}
-            total={100}
+            total={100}ProductDescription
             onSuccess={onSuccess}
             onError={onError}
-            onCancel={onCancel} />
+            onCancel={onCancel} /> */}
         </div>
       </Router>
  );
