@@ -3,10 +3,22 @@ import Jumbotron from "../Jumbotron";
 import { Col, Row, Container } from "../Grid";
 import ShoppingCart from '../PayPal/shoppingCart.js';
 import ViewShoppingCart from '../PayPal/ViewShoppingCart.js';
+import API from "../../utils/API";
 import './ProductDesc.css';
 
 
 class FilmCleaner extends Component {
+  state = {
+    product: {}
+  };
+  // When this component mounts, grab the product with the _id of this.props.match.params.id
+  // e.g. localhost:3000/products/599dcb67f0f16317844583fc
+  componentDidMount() {
+    API.getProduct(this.props.match.params.id)
+      .then(res => this.setState({ product: res.data }))
+      .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <Container fluid>
@@ -15,12 +27,16 @@ class FilmCleaner extends Component {
             <Jumbotron>
               <ShoppingCart />
               <ViewShoppingCart />
-              <div className = "productDesc border border-white rounded-4">
-                Completely safe for cleaning any film base, emulsion and prints.
-    
-    AR Static B Gone Film Cleaner dries extremely fast -- will not streak or leave a residue. Compatible with, and will not dissolve or remove, a water base opaque. One quick application and wipe removes dirt, grease, fingerprints, permanent marker and tape marks from expensive film. The AR anti-static action keeps dust and dirt from collecting on the clean surface.
-    Kills static on contact
-    Will not streak or leave a residue
+              <div className="productDesc border border-white rounded-4">
+              {/* TODO: Render this image! */}
+                <p>{JSON.stringify(this.state.product.images)}</p>
+                {/* <img className="product-image" src={this.state.product.images[0]} alt={this.state.product.name} /> */}
+
+                <p> {this.state.product.name} SKU: <span>{this.state.product.sku}</span> </p>
+                <p> {this.state.product.description} </p>
+                <p>Features: {this.state.product.features}</p>
+                <p>Size: {this.state.product.size} <span>Price: ${Number.parseFloat(this.state.product.price).toFixed(2)}</span></p>
+                <p>Shipping Weight: {JSON.stringify(this.state.product.shipping_weight)}</p>
               </div>
             </Jumbotron>
           </Col>

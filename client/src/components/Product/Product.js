@@ -5,7 +5,7 @@ import './Product.css';
 const Product = (props) => (
     <div className="Product rounded rounded-6 m-2 ">
         <div key={props.id} >
-        <a href="/ProductDescription"><img className="product-image" src={props.image} alt={props.name} /></a>
+        <a href={"/products/"+props.id}><img className="product-image" src={props.image} alt={props.name} /></a>
             <p> {props.name} SKU: <span>{props.sku}</span> </p>
             <p> {props.description} </p>
             <p>Features: {props.features}</p>

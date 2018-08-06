@@ -5,11 +5,15 @@ export default {
   getProducts: function() {
     return axios.get("/api/products");
   },
+  // Gets the product with the given id
+  getProduct: function(id) {
+    return axios.get("/api/products/" + id);
+  }
 
 
 
   // Gets all books
-  getBooks: function() {
+  ,getBooks: function() {
     return axios.get("/api/books");
   },
   // Gets the book with the given id
