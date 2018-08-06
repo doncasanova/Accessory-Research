@@ -132,7 +132,7 @@ const productSeed = [
     features: "Use on monitors and scanners to eliminate static-build up, Will not streak or leave a residue, Keeps dust away from the clean surface eliminating pin holes on negatives, saving valuable opaquing time.",
     size: "8oz spray bottle- 25 per case",
     price: 100.50,
-    images: ["/images/Glass.jpg"],
+    images: ["/images/GlassCleaner.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
   }
