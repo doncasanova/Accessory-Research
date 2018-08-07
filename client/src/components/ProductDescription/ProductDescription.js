@@ -22,28 +22,30 @@ class ProductDescription extends Component {
   render() {
     return (
       <Jumbotron>
-      <Container fluid>
-        <Row >
-          <Col size="md-4 sm-12 d-flex align-items-start">
-                <img className="product-image productImage" src={this.state.product.images} alt={this.state.product.name}></img>
-                <ShoppingCart />
-                </Col>
-                <Col size="md-8 sm-12 d-flex align-items-right">
-                <div className="productDesc border border-white rounded-4 ">
-                    <p> {this.state.product.name} SKU: <span>{this.state.product.sku}</span> </p>
-                    <p> {this.state.product.description} </p>
-                    <p>Features: {this.state.product.features}</p>
-                    <p>Size: {this.state.product.size} <span>Price: ${Number.parseFloat(this.state.product.price).toFixed(2)}</span></p>
-                    <p>Shipping Weight: {JSON.stringify(this.state.product.shipping_weight)}</p>
-                </div>
-          </Col>
-        </Row>
-        <Row >
-        <Col size="md-12 sm-12 d-flex align-items-start">
-          <AmazonAdd/>
-          </Col>
-        </Row>
-      </Container>
+        <Container fluid>
+          <Row >
+            <Col size="md-4 sm-12 d-flex align-items-start">
+              <img className="product-image productImage" src={this.state.product.images} alt={this.state.product.name}></img>
+              <ShoppingCart />
+            </Col>
+            <Col size="md-8 sm-12 d-flex align-items-right">
+              <div className="productDesc border border-white rounded-4 ">
+                <h2> {this.state.product.name} SKU: <span>{this.state.product.sku}</span> </h2>
+                <br></br>
+                <h4> {this.state.product.description} </h4>
+                <br></br>
+                <h5>Features: {this.state.product.features}</h5>
+                <p>Size: {this.state.product.size} <span>Price: ${Number.parseFloat(this.state.product.price).toFixed(2)}</span></p>
+                <p>Shipping Weight: {JSON.stringify(this.state.product.shipping_weight)}</p>
+              </div>
+            </Col>
+          </Row>
+          <Row >
+            <Col size="md-12 sm-12 d-flex align-items-start">
+              <AmazonAdd />
+            </Col>
+          </Row>
+        </Container>
       </Jumbotron>
     );
   }

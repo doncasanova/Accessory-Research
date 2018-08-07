@@ -7,26 +7,9 @@ import Login from "./components/Login";
 import Nav from "./components/Nav";
 import ProductDescription from './components/ProductDescription';
 
-const CLIENT = {
-  sandbox: 'AdOGtOUu6PM3rYwSPn9R-Q9Fjb2DTKhIOOIlL3pKi-QLT2KmpTa8xPriasyBqeyWdmSia8swrODxDxc9',
-  production: 'xxxXXX',
-};
-
-const ENV = process.env.NODE_ENV === 'production'
-  ? 'production'
-  : 'sandbox';
-
 
 class App extends React.Component {
   render() {
-    const onSuccess = (payment) =>
-      console.log('Successful payment!', payment);
-
-    const onError = (error) =>
-      console.log('Erroneous payment OR failed to load script!', error);
-
-    const onCancel = (data) =>
-      console.log('Cancelled payment!', data);
     return (
 
       <Router>

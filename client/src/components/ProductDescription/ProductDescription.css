@@ -5,7 +5,8 @@
     border-width: 1.5px;
     border-color: white;
     color: white;
-    margin: 20px
+    margin: 20px;
+    padding: 5px
 }
 .productImage {
     width: 200px;
