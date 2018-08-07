@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import AllProducts from "./components/AllProducts";
 import NoMatch from "./components/NoMatch";
-import Login from "./components/Login/Login.js";
+import Login from "./components/Login";
 import Nav from "./components/Nav";
-import ProductDescription from './components/ProductDescription/ProductDescription.js';
+import ProductDescription from './components/ProductDescription';
 
 const CLIENT = {
   sandbox: 'AdOGtOUu6PM3rYwSPn9R-Q9Fjb2DTKhIOOIlL3pKi-QLT2KmpTa8xPriasyBqeyWdmSia8swrODxDxc9',
