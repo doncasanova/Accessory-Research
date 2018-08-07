@@ -27,6 +27,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.0.17",
     "paypal-checkout": "^4.0.209",
-    "react-async-script-loader": "^0.3.0"
+    "react-async-script-loader": "^0.3.0",
+    "react-bootstrap": "^0.32.1"
   }
 }
