@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Books from "./pages/Books";
 import Products from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
+import Login from "./components/Login/Login.js";
 import Nav from "./components/Nav";
 import PaypalButton from './components/PayPal/PaypalButton.js';
 import ProductDescription from './components/ProductDescription/ProductDescription.js';
@@ -39,6 +40,7 @@ class App extends React.Component {
             <Route exact path="/Products" component={Products} />
             <Route exact path="/ProductDescription" component={ProductDescription} />
             <Route exact path="/Products/:id" component={ProductDescription} />
+            <Route path="/login" exact component={Login} />
             <Route component={NoMatch} />
           </Switch>
           {/* <PaypalButton

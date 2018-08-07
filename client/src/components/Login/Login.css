@@ -1,0 +1,18 @@
+@media all and (min-width: 480px) {
+    .Login {
+      border-style: solid;
+      border-radius: 20px;
+      border-width: 5px;
+      border-color: rgb(77, 7, 67);
+      color: black;
+      background: rgb(165, 201, 243);
+      position: relative;
+      top: 100px;
+      padding: 30px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
