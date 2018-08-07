@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Products from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
+import MainPage from "./components/MainPage";
+import AllProducts from "./components/AllProducts";
+import NoMatch from "./components/NoMatch";
 import Login from "./components/Login/Login.js";
 import Nav from "./components/Nav";
-import PaypalButton from './components/PayPal/PaypalButton.js';
 import ProductDescription from './components/ProductDescription/ProductDescription.js';
 
 const CLIENT = {
@@ -32,26 +31,15 @@ class App extends React.Component {
 
       <Router>
         <div>
-          <Nav> 
-		  hello
-		  </Nav>
+          <Nav/>
           <Switch>
-            <Route exact path="/" component={Books} />
-            <Route exact path="/Products" component={Products} />
+            <Route exact path="/" component={MainPage} />
+            <Route exact path="/Products" component={AllProducts} />
             <Route exact path="/ProductDescription" component={ProductDescription} />
             <Route exact path="/Products/:id" component={ProductDescription} />
             <Route path="/login" exact component={Login} />
             <Route component={NoMatch} />
           </Switch>
-          {/* <PaypalButton
-            client={CLIENT}
-            env={ENV}
-            commit={true}
-            currency={'USD'}
-            total={100}ProductDescription
-            onSuccess={onSuccess}
-            onError={onError}
-            onCancel={onCancel} /> */}
         </div>
       </Router>
  );
