@@ -45,6 +45,10 @@ class Nav extends Component {
             <li className="nav-item ">
               <a className="nav-link" href="/Login">Login</a>
             </li>
+            <br/>
+            <li className="nav-item ">
+              <a className="nav-link" href="/CustomerInfo">Customer Info</a>
+            </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
