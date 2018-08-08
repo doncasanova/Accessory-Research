@@ -26,7 +26,7 @@ class ProductDescription extends Component {
           <Row >
             <Col size="md-4 sm-12 d-flex align-items-start">
               <img className="product-image productImage" src={this.state.product.images} alt={this.state.product.name}></img>
-              <ShoppingCart />
+              <ShoppingCart cart_id={this.state.product.cart_id || 0} />
             </Col>
             <Col size="md-8 sm-12 d-flex align-items-right">
               <div className="productDesc border border-white rounded-4 ">
