@@ -8,7 +8,7 @@ const Product = (props) => (
         <a href={"/products/"+props.id}><img className="product-image" src={props.image} alt={props.name} /></a>
             <p> {props.name} </p> 
             <p>SKU: <span>{props.sku}</span> </p>
-             <a href={"/products/"+props.id}><button type="button" className="btn btn-dark">Product Description</button></a>
+             <a href={"/products/"+props.id}><button type="button" className="btn btn-dark">Product Details</button></a>
         </div>
     </div>
 )
