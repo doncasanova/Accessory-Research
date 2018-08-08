@@ -6,6 +6,7 @@ const db = require("../models");
 mongoose.connect(
   process.env.MONGODB_URI ||
   "mongodb://localhost/accessory-research"
+  // "mongodb://heroku_tqfzrg5k:m7h5v314ub469ebraais72k7hf@ds113122.mlab.com:13122/heroku_tqfzrg5k"
 );
 
 
@@ -38,7 +39,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/HeavyDuty.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "S2UY7NNLY3DK4"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f048"),
@@ -50,7 +52,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/HeavyDuty.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "FKSL8TW7AZDB2"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f049"),
@@ -62,7 +65,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/Plastic.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "825S3G64SF4SW"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f050"),
@@ -74,7 +78,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/Plastic.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "RSYK77JNEPHQJ"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f051"),
@@ -86,7 +91,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/FilmCleaner.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "MNX8KAJ6PGNL2"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f052"),
@@ -98,7 +104,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/FilmCleaner.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "V2ZV95KRWXN48"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f053"),
@@ -110,7 +117,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/Screen.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "TA3DLMBLNGUSU"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f054"),
@@ -122,7 +130,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/Screen.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "LYLEKUFPGPHXU"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f055"),
@@ -134,7 +143,8 @@ const productSeed = [
     price: 100.50,
     images: ["/images/GlassCleaner.jpg"],
     stock: 100,
-    shipping_weight: {value: 14, units: "lbs"}
+    shipping_weight: {value: 14, units: "lbs"},
+    cart_id: "HG39YZC7AR48L"
   }
 ];
 
