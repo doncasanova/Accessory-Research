@@ -12,7 +12,8 @@ const productSchema = new Schema({
   images: { type : Array , "default" : [] },
   videos: { type : Array , "default" : [] },
   stock: { type: Number, required: true },
-  shipping_weight: Schema.Types.Mixed
+  shipping_weight: Schema.Types.Mixed,
+  cart_id: { type: String }
 });
 
 const Product = mongoose.model("Product", productSchema);
