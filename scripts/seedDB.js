@@ -35,7 +35,7 @@ const productSeed = [
     description: "Formulated for today's Hi-tech graphic arts, digital photo processing and printing equipment. Used where machinery and processes generate static electricity.",
     features: "Kills static on contact. Once applied to a work station or machine it lasts for hours.",
     size: "quart- 8 per case",
-    price: 100.50,
+    price: 246.75,
     images: ["/images/HeavyDuty.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
@@ -47,7 +47,7 @@ const productSeed = [
     description: "Formulated for today's Hi-tech graphic arts, digital photo processing and printing equipment. Used where machinery and processes generate static electricity.",
     features: "Kills static on contact. Once applied to a work station or machine it lasts for hours.",
     size: "8oz spray bottle- 25 per case",
-    price: 100.50,
+    price: 287.70,
     images: ["/images/HeavyDuty.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
@@ -59,7 +59,7 @@ const productSeed = [
     description: "Is completely safe for most types of plastic, including Acrylic and Polycarbonate. Will not attack flame treated edges. Dries fast -- will not streak or leave a residue. Cleans the surface and kills all static electricity while preparing the piece for Screen Printing or Painting. One quick application and wipe removes dirt, grease and fingerprints.The AR anti-static action keeps dust and dirt from being attracted to the cleaned surface.",
     features: "Kills static on contact. Will not streak or leave a residue. The best and most cost effective plastic cleaner on the market.",
     size: "quart- 8 per case",
-    price: 100.50,
+    price: 246.75,
     images: ["/images/Plastic.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
@@ -71,7 +71,7 @@ const productSeed = [
     description: "Is completely safe for most types of plastic, including Acrylic and Polycarbonate. Will not attack flame treated edges. Dries fast -- will not streak or leave a residue. Cleans the surface and kills all static electricity while preparing the piece for Screen Printing or Painting. One quick application and wipe removes dirt, grease and fingerprints.The AR anti-static action keeps dust and dirt from being attracted to the cleaned surface.",
     features: "Kills static on contact. Will not streak or leave a residue. The best and most cost effective plastic cleaner on the market.",
     size: "8oz spray bottle- 25 per case",
-    price: 100.50,
+    price: 287.70,
     images: ["/images/Plastic.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
@@ -83,7 +83,7 @@ const productSeed = [
     description: "AR Static B Gone Film Cleaner dries extremely fast -- will not streak or leave a residue. Compatible with, and will not dissolve or remove, a water base opaque. One quick application and wipe removes dirt, grease, fingerprints, permanent marker and tape marks from expensive film. The AR anti-static action keeps dust and dirt from collecting on the clean surface. ",
     features: "Completely safe for cleaning any film base, emulsion and prints.",
     size: "quart- 8 per case",
-    price: 100.50,
+    price: 308.70,
     images: ["/images/FilmCleaner.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
@@ -95,7 +95,7 @@ const productSeed = [
     description: "AR Static B Gone Film Cleaner dries extremely fast -- will not streak or leave a residue. Compatible with, and will not dissolve or remove, a water base opaque. One quick application and wipe removes dirt, grease, fingerprints, permanent marker and tape marks from expensive film. The AR anti-static action keeps dust and dirt from collecting on the clean surface.",
     features: "Completely safe for cleaning any film base, emulsion and prints.",
     size: "8oz spray bottle- 25 per case",
-    price: 100.50,
+    price: 321.30,
     images: ["/images/FilmCleaner.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
@@ -107,7 +107,7 @@ const productSeed = [
     description: "AR Static B Gone Screen Printers can be used to eliminate static electricity on most plastics and substrates to be screened. Static Killer dries quickly and is greaseless. Excellent for cleaning regular films and printer's screen tints.",
     features: "AR Static B Gone Screen Printers  will insure an absolutely clean, static free screen that will not attract dust and dirt.",
     size: "quart- 8 per case",
-    price: 100.50,
+    price: 246.75,
     images: ["/images/Screen.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
@@ -119,19 +119,19 @@ const productSeed = [
     description: "AR Static B Gone Screen Printers can be used to eliminate static electricity on most plastics and substrates to be screened. Static Killer dries quickly and is greaseless. Excellent for cleaning regular films and printer's screen tints.",
     features: "AR Static B Gone Screen Printers  will insure an absolutely clean, static free screen that will not attract dust and dirt.",
     size: "8oz spray bottle- 25 per case",
-    price: 100.50,
+    price: 287.70,
     images: ["/images/Screen.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f055"),
-    sku: "D106-Q8",
+    sku: "D106-S",
     name: " AR Static B Gone Glass & Lens Cleaner (Spray Bottle)",
-    description: "AR Static B Gone Glass & Lens Cleaner is formulated for today's Hi-tech graphic arts processes. Use on scanner beds, monitors, copy boards, lenses, dark room and vacuum frames, stripping tables and glass cylinders of Diazo type. .",
+    description: "AR Static B Gone Glass & Lens Cleaner is formulated for today's Hi-tech graphic arts processes. Use on scanner beds, monitors, copy boards, lenses, dark room and vacuum frames, stripping tables and glass cylinders of Diazo type.",
     features: "Use on monitors and scanners to eliminate static-build up, Will not streak or leave a residue, Keeps dust away from the clean surface eliminating pin holes on negatives, saving valuable opaquing time.",
     size: "8oz spray bottle- 25 per case",
-    price: 100.50,
+    price: 185.32,
     images: ["/images/GlassCleaner.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"}

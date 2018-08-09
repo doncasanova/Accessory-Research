@@ -24,6 +24,7 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    console.log("insde of Login.js " + this.state.email, this.state.password)
   }
 
   render() {
