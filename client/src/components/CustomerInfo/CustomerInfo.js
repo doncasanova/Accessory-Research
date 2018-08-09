@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import axios from "axios";
 import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import API from "../../utils/API";
 
 import './CustomerInfo.css';
+import { get } from "mongoose";
 
 class CustomerInfo extends Component {
   state = {
@@ -33,6 +35,7 @@ class CustomerInfo extends Component {
                 <br></br>
                 <h4> Orders: {JSON.stringify(this.state.customer.orders)} </h4>
                 <br></br>
+                <button onClick = {function() {axios.get("/ups")}}>testing ups route</button>
               </div>
 
 

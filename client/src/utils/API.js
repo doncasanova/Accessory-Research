@@ -13,6 +13,7 @@ export default {
   getCustomer: function(id) {
     return axios.get("/api/customers/" + id);
   }
+ 
 
 
 
