@@ -7,6 +7,12 @@ router.route("/")
   .post(customersController.create);
 
 // Matches with "/api/customers/:id"
+router.route("/login")
+  .get(customersController.findByEmail)
+  .put(customersController.update)
+  .delete(customersController.remove);
+
+// Matches with "/api/customers/:id"
 router.route("/:id")
   .get(customersController.findById)
   .put(customersController.update)

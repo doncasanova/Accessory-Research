@@ -32,6 +32,7 @@ class CustomerInfo extends Component {
                 <h2> Email: {this.state.customer.email}</h2>
                 <br></br>
                 <h4> Orders: {JSON.stringify(this.state.customer.orders)} </h4>
+                {/* <p> City: {this.state.customer.shippingAddress}</p> */}
                 <br></br>
               </div>
 
