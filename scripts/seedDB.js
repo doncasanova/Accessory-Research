@@ -16,7 +16,8 @@ const customerSeed = [
     email: "mary@gmail.com",
     password: "password",
     shippingAddress: { name: 'Mary Doe', addr1: 'Suite 1010', addr2: '1000 Park Place', city: 'Anytown', state: 'NY', zip: '21212' },
-    billingAddress: { name: 'Mary Doe', addr1: 'Suite 1010', addr2: '1000 Park Place', city: 'Anytown', state: 'NY', zip: '21212' }
+    billingAddress: { name: 'Mary Doe', addr1: 'Suite 1010', addr2: '1000 Park Place', city: 'Anytown', state: 'NY', zip: '21212' },
+    orders: ["5b6118dd7a0ae86779da6364"]
   },
   {
     _id: mongoose.Types.ObjectId("5b61135457150d66ee255b2b"),
@@ -151,6 +152,7 @@ const productSeed = [
 
 const orderSeed = [
   {
+    _id: mongoose.Types.ObjectId("5b6118dd7a0ae86779da6364"),
     products: [{product_id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f047"), quantity: 1}, 
                {product_id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f048"), quantity: 1}],
     customerId: mongoose.Types.ObjectId("5b61135457150d66ee255b2a"),
