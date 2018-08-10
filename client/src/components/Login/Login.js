@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Redirect } from 'react-router'
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Col} from "../../components/Grid";
 import "./Login.css";
-import API from "../../utils/API"; 
+import API from "../../utils/API";
 
 export default class Login extends Component {
   constructor(props) {
@@ -28,49 +29,53 @@ export default class Login extends Component {
   handleSubmit = event => {
     event.preventDefault();
     API.getCustomerByEmail(this.state.email, this.state.password)
-    .then(res => this.setState({ customer: res.data }))
+      .then(res => this.setState({ customer: res.data }))
   }
 
   render() {
-    
-      if(this.state.customer.email) {
-        return <Redirect to="/CustomerInfo" customer= {this.state.customer}/>
-      } 
-      return (
 
-      <div className="row d-flex justify-content-center">
-        <div className="col-4">
-          <div className="Login">
-            <form onSubmit={this.handleSubmit}>
-              <FormGroup controlId="email" bsSize="large">
-                <ControlLabel>Email</ControlLabel>
-                <FormControl
-                  autoFocus
-                  type="email"
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                />
-              </FormGroup>
-              <FormGroup controlId="password" bsSize="large">
-                <ControlLabel>Password</ControlLabel>
-                <FormControl
-                  value={this.state.password}
-                  onChange={this.handleChange}
-                  type="password"
-                />
-              </FormGroup>
-              <Button
-                block
-                bsSize="large"
-                disabled={!this.validateForm()}
-                type="submit"
-              >
-                Login
+    if (this.state.customer.email) {
+      return <Redirect to="/CustomerInfo" customer={this.state.customer} />
+    }
+    return (
+
+      <row className = "d-flex justify-content-center">
+        <Col size=" md-6 lg-6">
+          <Col size="lg-6">
+            <div className="Login">
+              <Col size="lg-12 ">
+                <form onSubmit={this.handleSubmit}>
+                  <FormGroup controlId="email" bsSize="large">
+                    <ControlLabel>Email</ControlLabel>
+                    <FormControl
+                      autoFocus
+                      type="email"
+                      value={this.state.email}
+                      onChange={this.handleChange}
+                    />
+                  </FormGroup>
+                  <FormGroup controlId="password" bsSize="large">
+                    <ControlLabel>Password</ControlLabel>
+                    <FormControl
+                      value={this.state.password}
+                      onChange={this.handleChange}
+                      type="password"
+                    />
+                  </FormGroup>
+                  <Button
+                    block
+                    bsSize="large"
+                    disabled={!this.validateForm()}
+                    type="submit"
+                  >
+                    Login
           </Button>
-            </form>
-          </div>
-        </div>
-      </div>
+                </form>
+              </Col>
+            </div>
+          </Col>
+        </Col>
+</row>
     )
   }
 }

@@ -38,6 +38,7 @@ class Products extends Component {
           </Row>
         </Jumbotron>
       </Container>
+ 
 
     );
   }
