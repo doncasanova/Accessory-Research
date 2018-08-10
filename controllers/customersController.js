@@ -17,7 +17,7 @@ module.exports = {
   },
   findByEmail: function(req, res) {
     db.Customer
-      .find({email: req.query.email, password: req.query.password})
+      .findOne({email: req.query.email, password: req.query.password})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

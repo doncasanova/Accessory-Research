@@ -6,11 +6,11 @@ import CustomerInfo from "./components/CustomerInfo";
 import NoMatch from "./components/NoMatch";
 import Login from "./components/Login";
 import Nav from "./components/Nav";
-import ProductDescription from './components/ProductDescription';
-
+import ProductDescription from './components/ProductDescription'
 
 class App extends React.Component {
   render() {
+    // console.log(Login.state.customer)
     return (
 
       <Router>

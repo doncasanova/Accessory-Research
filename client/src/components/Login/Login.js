@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from 'react-router'
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
 import API from "../../utils/API"; 
@@ -9,7 +10,8 @@ export default class Login extends Component {
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      customer: {}
     };
   }
 
@@ -30,7 +32,12 @@ export default class Login extends Component {
   }
 
   render() {
-    return (
+    
+      if(this.state.customer.email) {
+        return <Redirect to="/CustomerInfo" customer= {this.state.customer}/>
+      } 
+      return (
+
       <div className="row d-flex justify-content-center">
         <div className="col-4">
           <div className="Login">
@@ -64,6 +71,6 @@ export default class Login extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }

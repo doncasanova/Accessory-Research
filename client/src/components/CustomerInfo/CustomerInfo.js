@@ -11,6 +11,12 @@ class CustomerInfo extends Component {
   state = {
     customer: {}
   };
+  constructor(props){
+    super(props);
+    this.setState({
+        customer: props.customer
+    })
+}
 
   // When this component mounts, grab the customer with the _id of this.props.match.params.id
   // e.g. localhost:3000/customers/599dcb67f0f16317844583fc
