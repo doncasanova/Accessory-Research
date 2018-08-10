@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
+import API from "../../utils/API"; 
 
 export default class Login extends Component {
   constructor(props) {
@@ -24,7 +25,8 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log("insde of Login.js " + this.state.email, this.state.password)
+    API.getCustomerByEmail(this.state.email, this.state.password)
+    .then(res => this.setState({ customer: res.data }))
   }
 
   render() {

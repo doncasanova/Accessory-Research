@@ -12,6 +12,10 @@ export default {
   // Gets the product with the given id
   getCustomer: function(id) {
     return axios.get("/api/customers/" + id);
+  },
+   // Gets the product with the given id
+   getCustomerByEmail: function(email, password) {
+    return axios.get(`/api/customers/login?email=${email}&password=${password}`);
   }
  
 
