@@ -2,7 +2,7 @@ import React from "react";
 import './ProductScrollDon.css';
 import Product from "../../components/Product";
 
-class ProductScrollDon extends React.Component {
+export default class ProductScrollDon extends React.Component {
   render() {
     return (
 
@@ -65,4 +65,3 @@ class ProductScrollDon extends React.Component {
   }
 }
 
-export default ProductScrollDon;
