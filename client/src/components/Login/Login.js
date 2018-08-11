@@ -41,16 +41,12 @@ export default class Login extends Component {
 
     // if (this.state.customer !== null) {
     if (this.state.customer.email) {
-<<<<<<< HEAD
-      return <Redirect to="/customer/info" customer={this.state.customer} />
-=======
       // return <Redirect to="/CustomerInfo" customer={this.state.customer} />
       //   return (<Redirect to={{
       //     pathname: '/CustomerInfo/'+this.state.customer._id,
       //     state: { customer: this.state.customer }
       // }} />)
       return <Redirect to={"/CustomerInfo/" + this.state.customer._id} />
->>>>>>> master
     }
     return (
 
