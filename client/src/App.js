@@ -24,7 +24,7 @@ class App extends React.Component {
             <Route exact path="/product/scroll/don" component={ProductScrollDon} />
             <Route exact path="/product/scroll/chuck" component={ProductScrollChuck} />
             <Route exact path="/product/scroll/andrew" component={ProductScrollAndrew} />
-            <Route exact path="/customer/info" component={CustomerInfo} />
+            <Route exact path="/customer/:id" component={CustomerInfo} />
             <Route exact path="/product/description" component={ProductDescription} />
             <Route exact path="/products/:id" component={ProductDescription} />
             <Route exact path="/login" component={Login} />

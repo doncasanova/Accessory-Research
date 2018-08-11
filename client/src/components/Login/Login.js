@@ -46,7 +46,7 @@ export default class Login extends Component {
       //     pathname: '/CustomerInfo/'+this.state.customer._id,
       //     state: { customer: this.state.customer }
       // }} />)
-      return <Redirect to={"/CustomerInfo/" + this.state.customer._id} />
+      return <Redirect to={"/customer/" + this.state.customer._id} />
     }
     return (
 
