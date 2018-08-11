@@ -5,24 +5,23 @@ import { Col, Row, Container } from "../../components/Grid";
 import API from "../../utils/API";
 
 import './CustomerInfo.css';
-import { get } from "mongoose";
 
 class CustomerInfo extends Component {
   state = {
     customer: {}
   };
-  constructor(props){
-    super(props);
-    this.setState({
-        customer: props.customer
-    })
-}
+//   constructor(props){
+//     super(props);
+//     // this.setState({
+//     //     customer: props.customer
+//     // })
+// }
 
   // When this component mounts, grab the customer with the _id of this.props.match.params.id
   // e.g. localhost:3000/customers/599dcb67f0f16317844583fc
   // We set the state attribute "customer" to the specified Customer JSON object via the API response
   componentDidMount() {
-    API.getCustomer("5b61135457150d66ee255b2a") // this.props.match.params.id (ToDo: currently hardcoded)
+    API.getCustomer(this.props.match.params.id) //"5b61135457150d66ee255b2a") // this.props.match.params.id (ToDo: currently hardcoded)
       .then(res => this.setState({ customer: res.data }))
       .catch(err => console.log(err));
   }

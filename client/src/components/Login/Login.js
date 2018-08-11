@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from 'react-router'
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import { Col} from "../../components/Grid";
+import { Col } from "../../components/Grid";
 import "./Login.css";
 import API from "../../utils/API";
 
@@ -29,17 +29,28 @@ export default class Login extends Component {
   handleSubmit = event => {
     event.preventDefault();
     API.getCustomerByEmail(this.state.email, this.state.password)
-      .then(res => this.setState({ customer: res.data }))
+      // .then(res => this.setState({ customer: res.data }))
+    .then((res) => {
+      if (res.data !== null)
+        this.setState({ customer: res.data })
+    }
+    )
   }
 
   render() {
 
+    // if (this.state.customer !== null) {
     if (this.state.customer.email) {
-      return <Redirect to="/CustomerInfo" customer={this.state.customer} />
+      // return <Redirect to="/CustomerInfo" customer={this.state.customer} />
+      //   return (<Redirect to={{
+      //     pathname: '/CustomerInfo/'+this.state.customer._id,
+      //     state: { customer: this.state.customer }
+      // }} />)
+      return <Redirect to={"/CustomerInfo/" + this.state.customer._id} />
     }
     return (
 
-      <row className = "d-flex justify-content-center">
+      <row className="d-flex justify-content-center">
         <Col size=" md-6 lg-6">
           <Col size="lg-6">
             <div className="Login">
@@ -75,7 +86,7 @@ export default class Login extends Component {
             </div>
           </Col>
         </Col>
-</row>
+      </row>
     )
   }
 }
