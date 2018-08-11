@@ -35,7 +35,7 @@ export default class Login extends Component {
   render() {
 
     if (this.state.customer.email) {
-      return <Redirect to="/CustomerInfo" customer={this.state.customer} />
+      return <Redirect to="/customer/info" customer={this.state.customer} />
     }
     return (
 

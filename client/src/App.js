@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import AllProducts from "./components/AllProducts";
-import ProductScroll from "./components/ProductScroll";
+import ProductScrollAndrew from "./components/ProductScrollAndrew";
+import ProductScrollDon from "./components/ProductScrollDon";
+import ProductScrollChuck from "./components/ProductScrollChuck";
 import CustomerInfo from "./components/CustomerInfo";
 import NoMatch from "./components/NoMatch";
 import Login from "./components/Login";
@@ -11,7 +13,6 @@ import ProductDescription from './components/ProductDescription'
 
 class App extends React.Component {
   render() {
-    // console.log(Login.state.customer)
     return (
 
       <Router>
@@ -19,12 +20,14 @@ class App extends React.Component {
           <Nav/>
           <Switch>
             <Route exact path="/" component={MainPage} />
-            <Route exact path="/Products" component={AllProducts} />
-            <Route exact path="/ProductScroll" component={ProductScroll} />
-            <Route exact path="/CustomerInfo" component={CustomerInfo} />
-            <Route exact path="/ProductDescription" component={ProductDescription} />
-            <Route exact path="/Products/:id" component={ProductDescription} />
-            <Route path="/login" exact component={Login} />
+            <Route exact path="/products" component={AllProducts} />
+            <Route exact path="/product/scroll/don" component={ProductScrollDon} />
+            <Route exact path="/product/scroll/chuck" component={ProductScrollChuck} />
+            <Route exact path="/product/scroll/andrew" component={ProductScrollAndrew} />
+            <Route exact path="/customer/info" component={CustomerInfo} />
+            <Route exact path="/product/description" component={ProductDescription} />
+            <Route exact path="/products/:id" component={ProductDescription} />
+            <Route exact path="/login" component={Login} />
             <Route component={NoMatch} />
           </Switch>
         </div>

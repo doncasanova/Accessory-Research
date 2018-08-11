@@ -32,7 +32,7 @@ class Nav extends Component {
               <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Products">Products</a>
+              <a className="nav-link" href="/products">Products</a>
             </li>
             <li className="nav-item dropdown">
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,10 +43,16 @@ class Nav extends Component {
               </div>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="/Login">Login</a>
+              <a className="nav-link" href="/login">Login</a>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="/ProducScroll">Scroll</a>
+              <a className="nav-link" href="/product/scroll/andrew">ScrollAndrew</a>
+            </li>
+            <li className="nav-item ">
+              <a className="nav-link" href="/product/scroll/chuck">ScrollChuck</a>
+            </li>
+            <li className="nav-item ">
+              <a className="nav-link" href="/product/scroll/don">ScrollDon</a>
             </li>
 
           </ul>

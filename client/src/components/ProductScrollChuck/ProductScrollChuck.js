@@ -1,9 +1,9 @@
 import React from "react";
-import './ProductScroll.css';
+import './ProductScrollChuck.css';
 
 
-const ProductScroll = () => (
-    <div>
+const ProductScrollChuck = () => (
+    <div className = "chuckCSS">
     <nav id="navbar-example2" className="navbar navbar-light bg-light">
     <a className="navbar-brand" href="#">Navbar</a>
     <ul className="nav nav-pills">
@@ -40,4 +40,4 @@ const ProductScroll = () => (
 )
 
 
-export default ProductScroll;
+export default ProductScrollChuck;

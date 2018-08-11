@@ -4,7 +4,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import './MainPage.css';
 
 
-class Books extends Component {
+class MainPage extends Component {
   render() {
     return (
       <Container fluid>
@@ -20,4 +20,4 @@ class Books extends Component {
   }
 }
 
-export default Books;
+export default MainPage;
