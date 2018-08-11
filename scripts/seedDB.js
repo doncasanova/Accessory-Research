@@ -5,8 +5,8 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/accessory-research"
-  // "mongodb://heroku_tqfzrg5k:m7h5v314ub469ebraais72k7hf@ds113122.mlab.com:13122/heroku_tqfzrg5k"
+  // "mongodb://localhost/accessory-research"
+  "mongodb://heroku_6vfm2dlr:jqle91s718kft10dfefukckn7p@ds139949.mlab.com:39949/heroku_6vfm2dlr"
 );
 
 
