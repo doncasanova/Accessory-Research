@@ -1,6 +1,6 @@
 import React from "react";
 import './ProductScrollChuck.css';
-import Product from "../../components/Product";
+import Products from "../../components/AllProducts";
 
 export default class ProductScrollChuck extends React.Component {
   render() {
@@ -29,14 +29,17 @@ export default class ProductScrollChuck extends React.Component {
         </nav>
         <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
           <div id="fat" className="row test1">
-            <h4 >
-              fat
-            </h4>
-            <img className="m-2" src="https://media.giphy.com/media/Jacgl87d9azte/giphy.gif" height="200px" alt="Office Space Static"></img>
+            <h1 className="mission-statement">
+              Accessory Research
+            </h1>
+            <h3 className="mission-statement">
+              Your Anti-Static Solution
+            </h3>
+            {/* <img className="m-2" src="https://media.giphy.com/media/Jacgl87d9azte/giphy.gif" height="200px" alt="Office Space Static"></img> */}
           </div>
           <div id="mdo" className="row test2">
             <h4 id="mdo" className="">
-              mdo
+              <Products />
             </h4>
             <img className="m-2" src="https://media.giphy.com/media/3ohjV978XBXKrgROSI/giphy.gif" height="200px" alt="Office Space Static"></img>
 
