@@ -15,11 +15,17 @@ class Products extends Component {
   }
 
   loadProducts = () => {
-    API.getProducts()
-      .then(
-        (res) => this.setState({ products: res.data })
-      )
-      .catch(err => console.log(err));
+    // API.getProducts()
+    //   .then(
+    //     (res) => this.setState({ products: res.data })
+    //   )
+    //   .catch(err => console.log(err));
+  //   console.log(this.props)
+    API.getFamilyProducts( this.props.family )
+    .then(
+      (res) => this.setState({ products: res.data })
+    )
+    .catch(err => console.log(err));
   };
 
   render() {

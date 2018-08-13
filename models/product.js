@@ -13,7 +13,8 @@ const productSchema = new Schema({
   videos: { type : Array , "default" : [] },
   stock: { type: Number, required: true },
   shipping_weight: Schema.Types.Mixed,
-  cart_id: { type: String }
+  cart_id: { type: String },
+  family: { type: String }
 });
 
 const Product = mongoose.model("Product", productSchema);

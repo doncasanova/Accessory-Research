@@ -15,6 +15,12 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findByFamily: function(req, res) {
+    db.Product
+      .find({family: req.params.family})
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   create: function(req, res) {
     db.Product
       .create(req.body)

@@ -37,6 +37,7 @@ class ProductDescription extends Component {
                 <h5>Features: {this.state.product.features}</h5>
                 <p>Size: {this.state.product.size} <span>Price: ${Number.parseFloat(this.state.product.price).toFixed(2)}</span></p>
                 <p>Shipping Weight: {JSON.stringify(this.state.product.shipping_weight)}</p>
+                <p>Product Family: {this.state.product.family}</p>
                 <p>Cart ID: {this.state.product.cart_id}</p>
               </div>
             </Col>

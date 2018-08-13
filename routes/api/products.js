@@ -6,6 +6,12 @@ router.route("/")
   .get(productsController.findAll)
   .post(productsController.create);
 
+// Matches with "/api/products/family/:family"
+router.route("/family/:family")
+  .get(productsController.findByFamily)
+  .put(productsController.update)
+  .delete(productsController.remove);
+
 // Matches with "/api/products/:id"
 router.route("/:id")
   .get(productsController.findById)

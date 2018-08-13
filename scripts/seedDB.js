@@ -5,8 +5,8 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  // "mongodb://localhost/accessory-research"
-  "mongodb://heroku_6vfm2dlr:jqle91s718kft10dfefukckn7p@ds139949.mlab.com:39949/heroku_6vfm2dlr"
+  "mongodb://localhost/accessory-research"
+  // "mongodb://heroku_6vfm2dlr:jqle91s718kft10dfefukckn7p@ds139949.mlab.com:39949/heroku_6vfm2dlr"
 );
 
 
@@ -41,7 +41,8 @@ const productSeed = [
     images: ["/images/HeavyDuty.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "S2UY7NNLY3DK4"
+    cart_id: "S2UY7NNLY3DK4",
+    family: "HD"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f048"),
@@ -54,7 +55,8 @@ const productSeed = [
     images: ["/images/HeavyDuty.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "FKSL8TW7AZDB2"
+    cart_id: "FKSL8TW7AZDB2",
+    family: "HD"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f049"),
@@ -67,7 +69,8 @@ const productSeed = [
     images: ["/images/Plastic.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "825S3G64SF4SW"
+    cart_id: "825S3G64SF4SW",
+    family: "Plastic"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f050"),
@@ -80,7 +83,8 @@ const productSeed = [
     images: ["/images/Plastic.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "RSYK77JNEPHQJ"
+    cart_id: "RSYK77JNEPHQJ",
+    family: "Plastic"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f051"),
@@ -93,7 +97,8 @@ const productSeed = [
     images: ["/images/FilmCleaner.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "MNX8KAJ6PGNL2"
+    cart_id: "MNX8KAJ6PGNL2",
+    family: "Film"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f052"),
@@ -106,7 +111,8 @@ const productSeed = [
     images: ["/images/FilmCleaner.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "V2ZV95KRWXN48"
+    cart_id: "V2ZV95KRWXN48",
+    family: "Film"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f053"),
@@ -119,7 +125,8 @@ const productSeed = [
     images: ["/images/Screen.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "TA3DLMBLNGUSU"
+    cart_id: "TA3DLMBLNGUSU",
+    family: "Screen"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f054"),
@@ -132,7 +139,8 @@ const productSeed = [
     images: ["/images/Screen.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "LYLEKUFPGPHXU"
+    cart_id: "LYLEKUFPGPHXU",
+    family: "Screen"
   },
   {
     _id: mongoose.Types.ObjectId("5b611293fdd2ae66ca94f055"),
@@ -145,7 +153,8 @@ const productSeed = [
     images: ["/images/GlassCleaner.jpg"],
     stock: 100,
     shipping_weight: {value: 14, units: "lbs"},
-    cart_id: "HG39YZC7AR48L"
+    cart_id: "HG39YZC7AR48L",
+    family: "Glass"
   }
 ];
 

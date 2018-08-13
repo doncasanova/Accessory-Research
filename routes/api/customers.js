@@ -6,7 +6,7 @@ router.route("/")
   .get(customersController.findAll)
   .post(customersController.create);
 
-// Matches with "/api/customers/:id"
+// Matches with "/api/customers/login"
 router.route("/login")
   .get(customersController.findByEmail)
   .put(customersController.update)

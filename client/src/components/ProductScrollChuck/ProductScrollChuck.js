@@ -21,46 +21,52 @@ export default class ProductScrollChuck extends React.Component {
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="#one">one</a>
                 <a className="dropdown-item" href="#two">two</a>
-                <div role="separator" class="dropdown-divider"></div>
+                <div role="separator" className="dropdown-divider"></div>
                 <a className="dropdown-item" href="#three">three</a>
               </div>
             </li>
           </ul>
         </nav>
         <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-          <div id="fat" className="row test1">
-            <h1 className="mission-statement">
+          <div id="fat" className="row chuck-test1">
+            <p className="mission-statement">
               Accessory Research
-            </h1>
-            <h3 className="mission-statement">
+            </p>
+            <p className="mission-statement">
               Your Anti-Static Solution
-            </h3>
+            </p>
             {/* <img className="m-2" src="https://media.giphy.com/media/Jacgl87d9azte/giphy.gif" height="200px" alt="Office Space Static"></img> */}
           </div>
-          <div id="mdo" className="row test2">
-            <h4 id="mdo" className="">
-              <Products />
+          <div id="mdo" className="row chuck-test2">
+            <h4 id="mdoh" className="">
+              <Products family="HD"/>
             </h4>
             <img className="m-2" src="https://media.giphy.com/media/3ohjV978XBXKrgROSI/giphy.gif" height="200px" alt="Office Space Static"></img>
 
           </div>
-          <div id="one" className="row test3">
+          <div id="one" className="row chuck-test3">
             <h4 id="one" className="">
-              one
+              <Products family="Plastic"/>
             </h4>
             <img className="m-2" src="https://tse2.mm.bing.net/th?id=OIP.RO7U-jwdpwlzf1SqR7Yx9gHaFj&pid=15.1&P=0&w=215&h=162" height="200px" alt="Office Space Static"></img>
           </div>
-          <div id="two" className="row test4">
+          <div id="two" className="row chuck-test4">
             <h4 className="">
-              two
+              <Products family="Film"/>
             </h4>
             <img className="m-2" src="https://thumbs.gfycat.com/ThreadbareFatJaeger-max-1mb.gif" height="200px" alt="Office Space Static"></img>
           </div>
-          <div id="three" className="row test5">
+          <div id="three" className="row chuck-test5">
             <h4 className="">
-              three
+              <Products family="Screen"/>
             </h4>
             <img className="m-2" src="https://38.media.tumblr.com/aa1a5169b4d38b4b83d779b79afbe8e9/tumblr_mkzqk0rXPD1s8yy9co1_500.gif" height="200px" alt="Office Space Static"></img>
+          </div>
+          <div id="four" className="row chuck-test4">
+            <h4 className="">
+              <Products family="Glass"/>
+            </h4>
+            <img className="m-2" src="https://thumbs.gfycat.com/ThreadbareFatJaeger-max-1mb.gif" height="200px" alt="Office Space Static"></img>
           </div>
         </div >
       </div >
