@@ -7,7 +7,7 @@ export default {
   },
   // Gets family products
   getFamilyProducts: function (fam) {
-    if (fam === "All") {
+    if (fam === "All" || !fam ) {
       return axios.get("/api/products");
     } else {
       return axios.get("/api/products/family/" + fam);
