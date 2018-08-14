@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "./api";
-
+import "./profilePage.css"
 const api = new API();
 
 export default class ProfilePage extends Component {
@@ -52,7 +52,7 @@ export default class ProfilePage extends Component {
 
   render() {
     return (
-      <div>
+      <div className = "profilePage">
         { this.state.error ? 
           <h1>Error: profile not found</h1>
           : this.renderProfile(this.state.profile)

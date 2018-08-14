@@ -1,7 +1,33 @@
+
+.jumbotron {
+    color: black;
+    background-color: white
+}
+
+.lineBreak { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+.createForm {
+    text-align: left
+}
 .profile-create {
     position: relative;
     text-align: center;
     top: 200px;
     color: white
 
+}
+
+.signUpHomeProfilrButton {
+    position: relative;
+    right: 20px;
+    color: black;
+    text-align: center;
 }

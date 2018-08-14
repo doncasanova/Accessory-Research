@@ -21,23 +21,25 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className = "signUpHome">
-        <h1>Accessory Research Customer Login/Sign Up</h1>
-        <Link to="/profile/create">Create a profile</Link>
+      <div className="row justify-content-center">
+        <div className=" col-6 signUpHome">
+          <h3>Customer Login/Sign Up</h3>
+          <Link class="btn btn-dark" Dark to="/profile/create">Create a profile</Link>
 
-        <h2>Our user profiles</h2>
-        <ul>
-          { this.state.profiles.map((profile) => {
-            return (profile.name) ? 
-              <li key={profile.name}>
-                <Link to={"/profile/" + profile.name}>
-                  {profile.name}
-                </Link>
-              </li>
+          <h3>Our user profiles</h3>
+          <ul className="signUpHomeProfilrButton">
+            {this.state.profiles.map((profile) => {
+              return (profile.name) ?
+                <li key={profile.name}>
+                  <Link class="btn btn-dark " Dark to={"/profile/" + profile.name}>
+                    {profile.name}
+                  </Link>
+                </li>
 
-              : null
-          })}
-        </ul>
+                : null
+            })}
+          </ul>
+        </div>
       </div>
     )
   }

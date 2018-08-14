@@ -40,7 +40,7 @@ export default class ProfileCreate extends Component {
     // event.preventDefault(); 
     if (false) {
       console.log("password is bad")
-    } 
+    }
     else {
       console.log("password is ok")
     }
@@ -78,60 +78,61 @@ export default class ProfileCreate extends Component {
 
   renderDemographicsForm() {
     return (
-      <form>
-        <h2>Tell us about yourself</h2>
-
-        <label htmlFor="name">Name:
+      <div className="row justify-content-center" >
+        <div className="col-4 jumbotron ">
+          <h1> Create Profile </h1>
+          <form className="createForm">
+            <label htmlFor="name">Name:
           <input type="text" name="name" value={this.state.name} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="companyname">Company Name:
+            </label>
+            <br></br>
+            <label htmlFor="companyname">Company Name:
           <input type="text" name="companyname" value={this.state.companyname} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="billtoaddress">Bill to Adress:
+            </label>
+            <br></br>
+            <label htmlFor="billtoaddress">Bill to Adress:
           <input type="text" name="billtoaddress" value={this.state.billtoaddress} onChange={this.handleTextChange} />
-        </label>
-        <label htmlFor="city">City:
+            </label>
+            <label htmlFor="city">City:
           <input type="text" name="city" value={this.state.city} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="state">State:
+            </label>
+            <br></br>
+            <label htmlFor="state">State:
           <input type="text" name="state" value={this.state.state} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="zipcode">Zip Code:
+            </label>
+            <br></br>
+            <label htmlFor="zipcode">Zip Code:
           <input type="text" name="zipcode" value={this.state.zipcode} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="shiptoaddress">Ship to Adress:
+            </label>
+            
+            <hr className = "lineBreak"></hr>
+            
+            <label htmlFor="shiptoaddress">Ship to Adress:
           <input type="text" name="shiptoaddress" value={this.state.shiptoaddress} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="city2">City:
+            </label>
+            <br></br>
+            <label htmlFor="city2">City:
           <input type="text" name="city2" value={this.state.city2} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="state2">State:
+            </label>
+            <br></br>
+            <label htmlFor="state2">State:
           <input type="text" name="state2" value={this.state.state2} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <label htmlFor="zipcode2">Zip Code:
+            </label>
+            <br></br>
+            <label htmlFor="zipcode2">Zip Code:
           <input type="text" name="zipcode2" value={this.state.zipcode2} onChange={this.handleTextChange} />
-        </label>
-        <br></br>
-        <br></br>
-        <label htmlFor="password">Password:
+            </label>
+            <br></br>
+            <label htmlFor="password">Password:
           <input type="text" name="password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
-        </label>
-        <br></br>
-        <br></br>
-        <label htmlFor="password_re">Re-enter Password:
+            </label>
+            <br></br>
+            <label htmlFor="password_re">Re-enter Password:
           <input type="text" name="password_re" value={this.state.password_re} onChange={(e) => this.handleChange(e)} />
-        </label>
-
-
-      </form>
+            </label>
+          </form>
+        </div>
+      </div>
     )
   }
 
@@ -193,7 +194,6 @@ export default class ProfileCreate extends Component {
   render() {
     return (
       <div className="profile-create">
-        <h1>Create your profile</h1>
 
         {this.state.step === 1 && this.renderDemographicsForm()}
 
@@ -201,15 +201,15 @@ export default class ProfileCreate extends Component {
 
         <div className="wizard-nav">
           {this.state.step > 1 &&
-            <button type="button" onClick={this.handleNavBackClick}>Previous</button>
+            <button type="button" class="btn btn-dark" Dark onClick={this.handleNavBackClick}>Previous</button>
           }
 
           {this.state.step < 3 &&
-            <button type="button" onClick={this.handleNavForwardClick}>Next</button>
+            <button type="button" class="btn btn-dark" Dark onClick={this.handleNavForwardClick}>Next</button>
           }
 
           {this.state.step === 3 &&
-            <button type="button" onClick={this.handleProfileCreate}>Create Profile</button>
+            <button type="button" class="btn btn-dark" Dark onClick={this.handleProfileCreate}>Create Profile</button>
           }
         </div>
       </div>
