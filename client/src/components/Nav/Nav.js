@@ -46,6 +46,9 @@ class Nav extends Component {
               <a className="nav-link" href="/login">Login</a>
             </li>
             <li className="nav-item ">
+              <a className="nav-link" href="/profile/home">Sign Up</a>
+            </li>
+            <li className="nav-item ">
               <a className="nav-link" href="/product/scroll/andrew">ScrollAndrew</a>
             </li>
             <li className="nav-item ">

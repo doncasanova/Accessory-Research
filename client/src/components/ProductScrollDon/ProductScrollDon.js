@@ -1,6 +1,6 @@
 import React from "react";
 import './ProductScrollDon.css';
-import Product from "../../components/Product";
+
 
 export default class ProductScrollDon extends React.Component {
   render() {
