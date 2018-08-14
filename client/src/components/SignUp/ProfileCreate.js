@@ -79,55 +79,56 @@ export default class ProfileCreate extends Component {
   renderDemographicsForm() {
     return (
       <div className="row justify-content-center" >
-        <div className="col-4 jumbotron ">
+        <div className="col-4 profileCreateBackground ">
           <h1> Create Profile </h1>
           <form className="createForm">
-            <label htmlFor="name">Name:
+            <label htmlFor="name">Name: <br></br>
           <input type="text" name="name" value={this.state.name} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="companyname">Company Name:
+            <label htmlFor="companyname">Company Name: <br></br>
           <input type="text" name="companyname" value={this.state.companyname} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="billtoaddress">Bill to Adress:
+            <label htmlFor="billtoaddress">Bill to Adress: <br></br>
           <input type="text" name="billtoaddress" value={this.state.billtoaddress} onChange={this.handleTextChange} />
             </label>
-            <label htmlFor="city">City:
+            <br></br>
+            <label htmlFor="city">City: <br></br>
           <input type="text" name="city" value={this.state.city} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="state">State:
+            <label htmlFor="state">State: <br></br>
           <input type="text" name="state" value={this.state.state} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="zipcode">Zip Code:
+            <label htmlFor="zipcode">Zip Code: <br></br>
           <input type="text" name="zipcode" value={this.state.zipcode} onChange={this.handleTextChange} />
             </label>
             
-            <hr className = "lineBreak"></hr>
+            <br></br>
             
-            <label htmlFor="shiptoaddress">Ship to Adress:
+            <label htmlFor="shiptoaddress">Ship to Adress: <br></br>
           <input type="text" name="shiptoaddress" value={this.state.shiptoaddress} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="city2">City:
+            <label htmlFor="city2">City: <br></br>
           <input type="text" name="city2" value={this.state.city2} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="state2">State:
+            <label htmlFor="state2">State: <br></br>
           <input type="text" name="state2" value={this.state.state2} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="zipcode2">Zip Code:
+            <label htmlFor="zipcode2">Zip Code: <br></br>
           <input type="text" name="zipcode2" value={this.state.zipcode2} onChange={this.handleTextChange} />
             </label>
             <br></br>
-            <label htmlFor="password">Password:
+            <label htmlFor="password">Password: <br></br>
           <input type="text" name="password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
             </label>
             <br></br>
-            <label htmlFor="password_re">Re-enter Password:
+            <label htmlFor="password_re">Re-enter Password: <br></br>
           <input type="text" name="password_re" value={this.state.password_re} onChange={(e) => this.handleChange(e)} />
             </label>
           </form>
@@ -197,18 +198,18 @@ export default class ProfileCreate extends Component {
 
         {this.state.step === 1 && this.renderDemographicsForm()}
 
-        {this.state.step === 3 && this.renderConfirmationForm()}
+        {this.state.step === 2 && this.renderConfirmationForm()}
 
         <div className="wizard-nav">
           {this.state.step > 1 &&
             <button type="button" class="btn btn-dark" Dark onClick={this.handleNavBackClick}>Previous</button>
           }
 
-          {this.state.step < 3 &&
+          {this.state.step < 2 &&
             <button type="button" class="btn btn-dark" Dark onClick={this.handleNavForwardClick}>Next</button>
           }
 
-          {this.state.step === 3 &&
+          {this.state.step === 2 &&
             <button type="button" class="btn btn-dark" Dark onClick={this.handleProfileCreate}>Create Profile</button>
           }
         </div>

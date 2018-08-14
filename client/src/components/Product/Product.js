@@ -3,6 +3,7 @@ import './Product.css';
 
 
 const Product = (props) => (
+    
     <div className="Product m-2 ">
         <div key={props.id} >
         <a href={"/products/"+props.id}><img className="product-image" src={props.image} alt={props.name} /></a>

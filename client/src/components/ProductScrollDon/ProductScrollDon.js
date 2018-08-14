@@ -30,34 +30,48 @@ export default class ProductScrollDon extends React.Component {
         <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
           <div id="fat" className="row test1">
             <h4 >
-          fat 
+              <div className="sp-container">
+                <div className="sp-content">
+                  <div className="sp-globe"></div>
+                  <h2 className="frame-1">WELCOME TO</h2>
+                  <h2 className="frame-2">YOUR ANTI-STATIC SOLUTIONS</h2>
+                  <h2 className="frame-3">STATIC B GONE PRODUCTS</h2>
+                  <h2 className="frame-4">STATIC B GONE FILM, SCREEN PRINTERS, PLASTIC CLEANER, HEAVY DUTY AND GLASS & LENS CLEANER</h2>
+                  <h2 className="frame-5">
+                    <span>PRODUCED FOR YOU</span>
+                    <span> by </span>
+                    <span>ACCESSORY RESEARCH.</span>
+                  </h2>
+                  <a className="sp-circle-link AR2-css " href="/products">AR</a>
+                </div>
+              </div>
             </h4>
-            <img className="m-2" src="https://media.giphy.com/media/Jacgl87d9azte/giphy.gif" height = "200px" alt="Office Space Static"></img>
+            <img className="m-2" src="https://media.giphy.com/media/Jacgl87d9azte/giphy.gif" height="200px" alt="Office Space Static"></img>
           </div>
           <div id="mdo" className="row test2">
             <h4 id="mdo" className="">
-           mdo
+              mdo
             </h4>
-            <img className="m-2" src="https://media.giphy.com/media/3ohjV978XBXKrgROSI/giphy.gif" height = "200px" alt="Office Space Static"></img>
-            
+            <img className="m-2" src="https://media.giphy.com/media/3ohjV978XBXKrgROSI/giphy.gif" height="200px" alt="Office Space Static"></img>
+
           </div>
           <div id="one" className="row test3">
             <h4 id="one" className="">
-         one
+              one
             </h4>
-            <img className="m-2" src="https://tse2.mm.bing.net/th?id=OIP.RO7U-jwdpwlzf1SqR7Yx9gHaFj&pid=15.1&P=0&w=215&h=162" height = "200px" alt="Office Space Static"></img>
+            <img className="m-2" src="https://tse2.mm.bing.net/th?id=OIP.RO7U-jwdpwlzf1SqR7Yx9gHaFj&pid=15.1&P=0&w=215&h=162" height="200px" alt="Office Space Static"></img>
           </div>
           <div id="two" className="row test4">
             <h4 className="">
-             two
+              two
             </h4>
-            <img className="m-2" src="https://thumbs.gfycat.com/ThreadbareFatJaeger-max-1mb.gif" height = "200px" alt="Office Space Static"></img>
+            <img className="m-2" src="https://thumbs.gfycat.com/ThreadbareFatJaeger-max-1mb.gif" height="200px" alt="Office Space Static"></img>
           </div>
           <div id="three" className="row test5">
-            <h4  className="">
-            three
+            <h4 className="">
+              three
             </h4>
-            <img className="m-2" src="https://38.media.tumblr.com/aa1a5169b4d38b4b83d779b79afbe8e9/tumblr_mkzqk0rXPD1s8yy9co1_500.gif" height = "200px" alt="Office Space Static"></img>
+            <img className="m-2" src="https://38.media.tumblr.com/aa1a5169b4d38b4b83d779b79afbe8e9/tumblr_mkzqk0rXPD1s8yy9co1_500.gif" height="200px" alt="Office Space Static"></img>
           </div>
         </div >
       </div >
