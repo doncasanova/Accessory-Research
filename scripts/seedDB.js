@@ -14,6 +14,7 @@ const customerSeed = [
   {
     _id: mongoose.Types.ObjectId("5b61135457150d66ee255b2a"),
     email: "mary@gmail.com",
+    companyName: "Google",
     password: "password",
     shippingAddress: { name: 'Mary Doe', addr1: 'Suite 1010', addr2: '1000 Park Place', city: 'Anytown', state: 'NY', zip: '21212' },
     billingAddress: { name: 'Mary Doe', addr1: 'Suite 1010', addr2: '1000 Park Place', city: 'Anytown', state: 'NY', zip: '21212' },
@@ -22,6 +23,7 @@ const customerSeed = [
   {
     _id: mongoose.Types.ObjectId("5b61135457150d66ee255b2b"),
     email: "james@gmail.com",
+    companyName: "Yahoo",
     password: "password",
     shippingAddress: { name: 'James Johnson', addr1: '1000 Main St', city: 'Southtown', state: 'NJ', zip: '31313-3232' },
     billingAddress: { name: 'James Johnson', addr1: '1000 Main St', city: 'Southtown', state: 'NJ', zip: '31313-3232' }
