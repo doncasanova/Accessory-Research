@@ -1,3 +1,7 @@
+import axios from "axios";
+
+
+
 export default class Fans {
   getFans() {
     try {
@@ -27,6 +31,8 @@ export default class Fans {
       console.log(fan)
 
     }
+
+    axios.post("/api/customers", fan);
 
     localStorage.setItem('fans', JSON.stringify(fans));
   }
