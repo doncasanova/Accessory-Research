@@ -15,7 +15,7 @@ class MainPage extends Component {
               <div className="sp-container">
                 <div className="sp-content">
                   <div className="sp-globe"></div>
-                  <h2 className="frame-1">WELCOME TO</h2>
+                  <h2 className="frame-1">WELCOME TO YOUR ANTI-STATIC SOLUTIONS</h2>
                   <h2 className="frame-2">YOUR ANTI-STATIC SOLUTIONS</h2>
                   <h2 className="frame-3">STATIC B GONE PRODUCTS</h2>
                   <h2 className="frame-4">FILM CLEANER, SCREEN PRINTERS, PLASTIC CLEANER, HEAVY DUTY AND GLASS & LENS CLEANER</h2>
