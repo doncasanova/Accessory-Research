@@ -15,7 +15,7 @@ class Nav extends Component {
       collapsed: !this.state.collapsed,
     });
   }
-  render() {
+  render(props) {
     const collapsed = this.state.collapsed;
     const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
     const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
@@ -31,9 +31,6 @@ class Nav extends Component {
             <li className="nav-item active">
               <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/products">Products</a>
-            </li>
             <li className="nav-item dropdown">
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a className="dropdown-item" href="/">Action</a>
@@ -42,18 +39,16 @@ class Nav extends Component {
                 <a className="dropdown-item" href="/">Something else here</a>
               </div>
             </li>
-            <li className="nav-item ">
-              <a className="nav-link" href="/login">Login</a>
-            </li>
-            <li className="nav-item ">
+
+            {/* <li className="nav-item ">
               <a className="nav-link" href="/product/scroll/andrew">ScrollAndrew</a>
-            </li>
+            </li> */}
             <li className="nav-item ">
-              <a className="nav-link" href="/product/scroll/chuck">ScrollChuck</a>
+              <a className="nav-link" href="/product/scroll/chuck">Home 2</a>
             </li>
-            <li className="nav-item ">
+            {/* <li className="nav-item ">
               <a className="nav-link" href="/product/scroll/don">ScrollDon</a>
-            </li>
+            </li> */}
 
           </ul>
            <Login/>
