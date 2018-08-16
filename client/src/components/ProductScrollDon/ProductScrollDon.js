@@ -8,7 +8,7 @@ export default class ProductScrollDon extends React.Component {
 
       <div className="donsCSS">
         <nav id="navbar-example2" className="navbar navbar-light bg-light navTest">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <a className="navbar-brand" href="open">Navbar</a>
           <ul className="nav nav-pills">
             <li className="nav-item">
               <a className="nav-link" href="#fat">@fat</a>
@@ -17,7 +17,7 @@ export default class ProductScrollDon extends React.Component {
               <a className="nav-link" href="#mdo">@mdo</a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="open" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="#one">one</a>
                 <a className="dropdown-item" href="#two">two</a>

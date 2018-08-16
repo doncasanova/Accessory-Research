@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from 'react-router'
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import { Col } from "../../components/Grid";
 import "./Login.css";
 import API from "../../utils/API";
 
