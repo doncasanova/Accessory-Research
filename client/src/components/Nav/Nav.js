@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Nav.css';
-
+import Login from "../../components/Login";
 
 class Nav extends Component {
   constructor(props) {
@@ -46,9 +46,6 @@ class Nav extends Component {
               <a className="nav-link" href="/login">Login</a>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="/profile/create">Sign Up</a>
-            </li>
-            <li className="nav-item ">
               <a className="nav-link" href="/product/scroll/andrew">ScrollAndrew</a>
             </li>
             <li className="nav-item ">
@@ -59,10 +56,11 @@ class Nav extends Component {
             </li>
 
           </ul>
-          <form className="form-inline my-2 my-lg-0">
+           <Login/>
+          {/* <form className="form-inline my-2 my-lg-0">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          </form> */}
         </div>
       </nav>
 
