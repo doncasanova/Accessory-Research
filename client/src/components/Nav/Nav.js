@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Nav.css';
 import Login from "../../components/Login";
 
+
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +26,6 @@ class Nav extends Component {
         <button onClick={this.toggleNavbar} className={`${classTwo}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-
         <div className={`${classOne}`} id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">

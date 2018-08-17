@@ -2,12 +2,13 @@ import React from "react";
 import './ProductScrollChuck.css';
 import Products from "../../components/AllProducts";
 
+
 export default class ProductScrollChuck extends React.Component {
   render() {
     return (
 
       <div className="chucksCSS">
-        <nav id="navbar-example2" className="navbar navbar-light bg-light navTest">
+        {/* <nav id="navbar-example2" className="navbar navbar-light bg-light navTest">
           <a className="navbar-brand" href="open">Navbar</a>
           <ul className="nav nav-pills">
             <li className="nav-item">
@@ -26,7 +27,7 @@ export default class ProductScrollChuck extends React.Component {
               </div>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
           <div id="fat" className="row chuck-test1">
             <p className="mission-statement">

@@ -48,7 +48,7 @@ export default class Login extends Component {
     }
     return (
 
-        <form class="form-inline" onSubmit={this.handleSubmit}>
+        <form className="form-inline" onSubmit={this.handleSubmit}>
                   <FormGroup className = "m-1" controlId="email" bsSize="large">
                     <ControlLabel>  Email  </ControlLabel>
                     <FormControl
