@@ -81,7 +81,7 @@ class CustomerInfo extends Component {
                 <p> BillTo State: {this.state.billState}</p>
                 <p> BillTo Zip: {this.state.billZip}</p>
                 <br></br>
-                <button onClick = {function() {axios.get("/ups")}}>testing ups route</button>
+                <button onClick = {() => {axios.post("/api/ups", this.state)}}>testing ups route</button>
               </div>
 
 
