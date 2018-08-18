@@ -42,9 +42,15 @@ export default class Login extends Component {
 
   render() {
 
+    
     // if (this.state.customer !== null) {
     if (this.state.customer.email) {
-      return <Redirect to={"/customer/" + this.state.customer._id} />
+      return<div >
+      <form className = " userLogIn form-inline"><h3> Welcome Back: {this.state.customer.email}</h3>
+      <a href="/"> <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button></a>
+      </form>
+      <Redirect to={"/customer/" + this.state.customer._id} />
+    </div>
     }
     return (
 
@@ -75,6 +81,7 @@ export default class Login extends Component {
                     Login
                   </Button>
              </FormGroup>
+             <a href="/profile/create"> <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Create Account</button></a>
                 </form>
 
     )
