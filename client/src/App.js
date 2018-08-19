@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import AllProducts from "./components/AllProducts";
 import ProductScrollAndrew from "./components/ProductScrollAndrew";
-import ProductScrollDon from "./components/ProductScrollDon";
 import ProductScrollChuck from "./components/ProductScrollChuck";
 import CustomerInfo from "./components/CustomerInfo";
 import NoMatch from "./components/NoMatch";
@@ -27,7 +26,6 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={MainPage} />
             <Route exact path="/products" component={AllProducts} />
-            <Route exact path="/product/scroll/don" component={ProductScrollDon} />
             <Route exact path="/product/scroll/chuck" component={ProductScrollChuck} />
             <Route exact path="/product/scroll/andrew" component={ProductScrollAndrew} />
             <Route exact path="/customer/:id" component={CustomerInfo} />

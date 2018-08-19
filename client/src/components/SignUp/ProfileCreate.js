@@ -85,14 +85,27 @@ export default class ProfileCreate extends Component {
 
   renderDemographicsForm() {
     return (
-      <div className="row justify-content-center" >
-        <div className="col-4 profileCreateBackground ">
-          <h1> Create Profile </h1>
-          <form className="createForm">
-            <label htmlFor="email">Email: <br></br>
+      <div>
+      <div className="row justify-content-center " >
+        <div className="profileCreateEmail ">
+        <form className="createForm form-inline">
+            <label className="m-1" htmlFor="email">Email: <br></br>
               <input type="text" name="email" value={this.state.email} onChange={this.handleTextChange} />
             </label>
+            <label className="m-1" htmlFor="password">Password: <br></br>
+              <input type="text" name="password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
+            </label>
             <br></br>
+            <label className="m-1" htmlFor="password_re">Re-enter Password: <br></br>
+              <input type="text" name="password_re" value={this.state.password_re} onChange={(e) => this.handleChange(e)} />
+            </label>
+            </form>
+        </div>
+      </div>
+      <div className="row justify-content-center" >
+        <div className="col-4 profileCreateBackground ">
+          <h3> Bill to info </h3>
+          <form className="createForm">
             <label htmlFor="companyName">Company Name: <br></br>
               <input type="text" name="companyName" value={this.state.companyName} onChange={this.handleTextChange} />
             </label>
@@ -120,8 +133,11 @@ export default class ProfileCreate extends Component {
             <label htmlFor="billZip">Bill to Zip Code: <br></br>
               <input type="text" name="billZip" value={this.state.billZip} onChange={this.handleTextChange} />
             </label>
-
-            <br></br>
+          </form>
+        </div>
+        <div className="col-4 profileCreateBackground ">
+          <h3> Ship to info </h3>
+          <form className="createForm">
             <label htmlFor="shipName">Ship to Name: <br></br>
               <input type="text" name="shipName" value={this.state.shipName} onChange={this.handleTextChange} />
             </label>
@@ -149,15 +165,10 @@ export default class ProfileCreate extends Component {
             <br></br>
 
 
-            <label htmlFor="password">Password: <br></br>
-              <input type="text" name="password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
-            </label>
-            <br></br>
-            <label htmlFor="password_re">Re-enter Password: <br></br>
-              <input type="text" name="password_re" value={this.state.password_re} onChange={(e) => this.handleChange(e)} />
-            </label>
+     
           </form>
         </div>
+      </div>
       </div>
     )
   }

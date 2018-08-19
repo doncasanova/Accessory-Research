@@ -1,61 +1,8 @@
 
 .AR2-css {
-    font-size: 350px;
+    font-size: 100px;
     font-family: "Times New Roman", Times, serif;
-    text-shadow: 3px 2px blue;
-   
+    text-shadow: 3px 2px blue; 
+    color: rgb(231, 207, 147)
 }
 
-a {
-	text-decoration: none;
-}
-
-.sp-container h2.frame-5 {
-	-webkit-animation: none;
-	-moz-animation: none;
-	-ms-animation: none;
-	animation: none;
-	color: transparent;
-	text-shadow: 0px 0px 1px #fff;
-}
-.sp-container h2.frame-5 span {
-	-webkit-animation: blurFadeIn 3s ease-in 1s backwards;
-	-moz-animation: blurFadeIn 1s ease-in 1s backwards;
-	-ms-animation: blurFadeIn 3s ease-in 1s backwards;
-	animation: blurFadeIn 3s ease-in 1s backwards;
-	color: transparent;
-	text-shadow: 0px 0px 1px #fff;
-}
-.sp-container h2.frame-5 span:nth-child(2) {
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-ms-animation-delay: 1s;
-	animation-delay: 1s;
-}
-
-
-.sp-circle-link {
-	position: absolute;
-	left: 50%;
-	bottom: 100px;
-	margin-left: -50px;
-	text-align: center;
-	line-height: 100px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	color: #3f1616;
-	font-size: 50px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-o-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
-}
-.sp-circle-link:hover {
-	background: #85373b;
-	color: #fff;
-}

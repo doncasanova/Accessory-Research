@@ -10,10 +10,21 @@
     padding: 30px 0;
 }
 
+.profileCreateEmail{
+    background: rgb(0, 13, 27);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: white;
+    color: white;
+    position: relative;
+    padding: 5px 0;
+}
+
 .profile-create {
     position: relative;
     text-align: center;
-    top: 200px;
+    top: 100px;
     color: white
 
 }

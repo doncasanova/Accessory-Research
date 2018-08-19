@@ -1,0 +1,13 @@
+.customerInfo {
+    background: rgb(0, 13, 27);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: white;
+    color: white;
+    
+    padding: 5px
+}
+li{
+    margin: 10px 0;
+  }

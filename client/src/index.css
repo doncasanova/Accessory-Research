@@ -1,8 +1,10 @@
 body {
-  background-image: url("https://wallpapertag.com/wallpaper/full/1/6/4/125537-popular-electric-background-1920x1080-laptop.jpg");
+  background-image: url("/images/static.jpg");
   height: 100%; 
-    
+    /* background-color: rgb(104, 67, 134); */
     /* Center and scale the image nicely */
+
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
