@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from 'react-router'
 import { Link } from "react-router-dom";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import ViewShoppingCart from "../../components/PayPal/ViewShoppingCart.js"
 import "./Login.css";
 import API from "../../utils/API";
 
@@ -50,6 +51,7 @@ export default class Login extends Component {
       return<div >
       <form className = " userLogIn form-inline"><h3> Welcome Back: {this.state.customer.email}</h3>
       <Link to="/"><button className="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button></Link>
+      <ViewShoppingCart/>
       </form>
       <Redirect to={"/customer/" + this.state.customer._id} />
     </div>
