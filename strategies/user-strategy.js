@@ -30,11 +30,18 @@ passport.use('local', new LocalStrategy({
   passReqToCallback: true,
   usernameField: 'email',
 }, ((req, email, password, done) => {
+
+  console.log(email, password)
+
     Customer.find({ email })
       .then((result) => {
         const user = result && result[0];
+       
         if (user && encryptLib.comparePassword(password, user.password)) {
           // all good! Passwords match!
+         console.log("password worked all is well")
+
+         
           done(null, user);
         } else if (user) {
           // not good! Passwords don't match!

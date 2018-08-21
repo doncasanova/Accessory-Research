@@ -40,6 +40,7 @@ router.get('/', (req, res) => {
   
   // LOGIN:
   router.post('/login', userStrategy.authenticate('local'), (req, res) => {
+
     res.sendStatus(200);
   });
   
