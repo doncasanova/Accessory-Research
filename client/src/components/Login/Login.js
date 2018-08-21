@@ -5,7 +5,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import ViewShoppingCart from "../../components/PayPal/ViewShoppingCart.js"
 import "./Login.css";
 import API from "../../utils/API";
-
+import axios from "axios";
 
  
 export default class Login extends Component {
@@ -20,7 +20,23 @@ export default class Login extends Component {
     };
   }
 
+  buttonWorks(email, password) {
+    axios.post('/api/login', {
+      email: email,
+      password: password
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+    console.log("hello out there")
+  }
  
+
+
+
   validateForm() {
     return this.state.email.length > 0 && this.state.password.length > 0;
   }
@@ -77,11 +93,11 @@ export default class Login extends Component {
                     />
             </FormGroup>
             <FormGroup className="m-3">
-                  <Button
+                  <Button onClick = {this.buttonWorks(this.state.email, this.state.password)}
                     block
                     bsSize="large"
                     disabled={!this.validateForm()}
-                    type="submit">
+                  >
                     Login
                   </Button>
              </FormGroup>

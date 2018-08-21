@@ -16,6 +16,10 @@ import ProfileCreate from "./components/SignUp/ProfileCreate";
 import Home from "./components/SignUp/Home";
 import ProfilePage from "./components/SignUp/ProfilePage";
 
+
+
+
+
 class App extends React.Component {
   render() {
     return (
