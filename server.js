@@ -4,7 +4,15 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+// This will handle all security stuff:
+const passport = require('./strategies/user-strategy.js');
+// This is a more generic file that handles cookies:
+const sessionConfig = require('./modules/session-middleware.js');
 
+// Passport session config and init:
+app.use(sessionConfig);
+app.use(passport.initialize());
+app.use(passport.session());
 
 require('dotenv').load();
 // Define middleware here

@@ -17,6 +17,5 @@ router.route("/:id")
   .get(customersController.findById)
   .put(customersController.update)
   .delete(customersController.remove);
-  
-
+ 
 module.exports = router;
