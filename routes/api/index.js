@@ -31,6 +31,7 @@ router.get('/', (req, res) => {
     const email = req.body.email;
     const password = encryptLib.encryptPassword(req.body.password);
     const newCustomer = new Customer({ email, password });
+    console.log(email, password, "register")
     newCustomer.save()
       .then(() => {
         res.sendStatus(201);
@@ -40,7 +41,7 @@ router.get('/', (req, res) => {
   
   // LOGIN:
   router.post('/login', userStrategy.authenticate('local'), (req, res) => {
-
+console.log("in post route")
     res.sendStatus(200);
   });
   

@@ -26,7 +26,7 @@ export default class Login extends Component {
       password: password
     })
     .then(function (response) {
-      console.log(response);
+      console.log(response, "res");
     })
     .catch(function (error) {
       console.log(error);
@@ -98,6 +98,7 @@ export default class Login extends Component {
                     bsSize="large"
                     disabled={!this.validateForm()}
                   >
+                  
                     Login
                   </Button>
              </FormGroup>

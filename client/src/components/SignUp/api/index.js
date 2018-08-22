@@ -32,7 +32,12 @@ export default class Fans {
 
     }
 
-    axios.post("/api/customers", fan);
+    // axios.post("/api/customers", fan);
+    axios.post("/api/register", fan);
+
+    
+
+
 
     localStorage.setItem('fans', JSON.stringify(fans));
   }
