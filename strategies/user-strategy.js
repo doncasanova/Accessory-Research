@@ -31,7 +31,7 @@ passport.use('local', new LocalStrategy({
   usernameField: 'email',
 }, ((req, email, password, done) => {
 
-  console.log(email, password)
+  // console.log(email, password)
 
     Customer.find({ email })
       .then((result) => {

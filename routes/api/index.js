@@ -41,8 +41,9 @@ router.get('/', (req, res) => {
   
   // LOGIN:
   router.post('/login', userStrategy.authenticate('local'), (req, res) => {
-console.log("in post route")
-    res.sendStatus(200);
+    res.json({
+      user_id: req.user._id
+    }); 
   });
   
   // LOGOUT (clear session data):

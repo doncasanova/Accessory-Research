@@ -13,25 +13,25 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
       email: "",
       password: "",
       customer: {}
     };
+    this.buttonWorks = this.buttonWorks.bind(this);
   }
 
-  buttonWorks(email, password) {
+  buttonWorks = (email, password) => {
     axios.post('/api/login', {
       email: email,
       password: password
     })
-    .then(function (response) {
-      console.log(response, "res");
+    .then((response) => {
+      this.setState({'redirect': `/customer/${response.user_id}`})
     })
     .catch(function (error) {
+      // display a state error message
       console.log(error);
     });
-    console.log("hello out there")
   }
  
 
@@ -60,7 +60,6 @@ export default class Login extends Component {
 
 
   render() {
-
     
     // if (this.state.customer !== null) {
     if (this.state.customer.email) {
@@ -74,7 +73,14 @@ export default class Login extends Component {
     }
     return (
 
+      <div>
+      
+        {this.state.redirect && (
+          <Redirect to={this.state.redirect} />
+        )}
+
         <form className="form-inline" onSubmit={this.handleSubmit}>
+            { JSON.stringify(this.state) }
                   <FormGroup className = "m-1" controlId="email" bsSize="large">
                     <ControlLabel>  Email  </ControlLabel>
                     <FormControl
@@ -93,7 +99,7 @@ export default class Login extends Component {
                     />
             </FormGroup>
             <FormGroup className="m-3">
-                  <Button onClick = {this.buttonWorks(this.state.email, this.state.password)}
+                  <Button onClick={() => { this.buttonWorks(this.state.email, this.state.password)} }
                     block
                     bsSize="large"
                     disabled={!this.validateForm()}
@@ -106,7 +112,8 @@ export default class Login extends Component {
              <Link to="/profile/create"><button className="btn btn-outline-success my-2 my-sm-0" type="submit">Create Account</button></Link>
              
                 </form>
-
+      
+      </div>
     )
   }
 }
