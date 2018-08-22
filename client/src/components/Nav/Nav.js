@@ -39,9 +39,9 @@ class Nav extends Component {
                 <a className="dropdown-item" href="/">Something else here</a>
               </div>
             </li>
-            <li className="nav-item ">
+            {/* <li className="nav-item ">
               <a className="nav-link" href="/product/scroll/chuck">Home 2</a>
-            </li>
+            </li> */}
           </ul>
           <Login />
         </div>
