@@ -83,92 +83,101 @@ export default class ProfileCreate extends Component {
     this.setState({ films: changedFilms })
   }
 
+  shipToSameAsBillTo = (e) => {
+
+    this.setState({shipName: this.state.billName})
+    this.setState({shipAddr1: this.state.billAddr1})
+    this.setState({shipAddr2: this.state.billAddr2})
+    this.setState({shipAddr1: this.state.billAddr1})
+    this.setState({shipCity: this.state.billCity})
+    this.setState({shipState: this.state.billState})
+    this.setState({shipZip: this.state.billZip})
+  }
+
+
   renderDemographicsForm() {
     return (
       <div>
-      <div className="row justify-content-center " >
-        <div className="profileCreateEmail ">
-        <form className="createForm form-inline">
-            <label className="m-1" htmlFor="email">Email: <br></br>
-              <input type="text" name="email" value={this.state.email} onChange={this.handleTextChange} />
-            </label>
-            <label className="m-1" htmlFor="password">Password: <br></br>
-              <input type="text" name="password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
-            </label>
-            <br></br>
-            <label className="m-1" htmlFor="password_re">Re-enter Password: <br></br>
-              <input type="text" name="password_re" value={this.state.password_re} onChange={(e) => this.handleChange(e)} />
-            </label>
+        <div className="row justify-content-center " >
+          <div className="profileCreateEmail ">
+            <form className="createForm form-inline">
+              <label className="m-1" htmlFor="email">Email: <br></br>
+                <input type="text" name="email" value={this.state.email} onChange={this.handleTextChange} />
+              </label>
+              <label className="m-1" htmlFor="password">Password: <br></br>
+                <input type="password" name="password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
+              </label>
+              <br></br>
+              <label className="m-1" htmlFor="password_re">Re-enter Password: <br></br>
+                <input type="password" name="password_re" value={this.state.password_re} onChange={(e) => this.handleChange(e)} />
+              </label>
             </form>
+          </div>
         </div>
-      </div>
-      <div className="row justify-content-center" >
-        <div className="col-4 profileCreateBackground ">
-          <h3> Bill to info </h3>
-          <form className="createForm">
-            <label htmlFor="companyName">Company Name: <br></br>
-              <input type="text" name="companyName" value={this.state.companyName} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="billName">Bill to Name: <br></br>
-              <input type="text" name="billName" value={this.state.billName} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="billAddr1">Bill to Address Line1: <br></br>
-              <input type="text" name="billAddr1" value={this.state.billAddr1} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="billAddr2">Bill to Address Line2: <br></br>
-              <input type="text" name="billAddr2" value={this.state.billAddr2} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="billCity">Bill to City: <br></br>
-              <input type="text" name="billCity" value={this.state.billCity} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="billState">Bill to State: <br></br>
-              <input type="text" name="billState" value={this.state.billState} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="billZip">Bill to Zip Code: <br></br>
-              <input type="text" name="billZip" value={this.state.billZip} onChange={this.handleTextChange} />
-            </label>
-          </form>
+        <div className="row justify-content-center" >
+          <div className="col-4 profileCreateBackground ">
+            <h3> Bill to info </h3>
+            <form className="createForm">
+              <label htmlFor="companyName">Company Name: <br></br>
+                <input type="text" name="companyName" value={this.state.companyName} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="billName">Bill to Name: <br></br>
+                <input type="text" name="billName" value={this.state.billName} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="billAddr1">Bill to Address Line1: <br></br>
+                <input type="text" name="billAddr1" value={this.state.billAddr1} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="billAddr2">Bill to Address Line2: <br></br>
+                <input type="text" name="billAddr2" value={this.state.billAddr2} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="billCity" >Bill to City: <br></br>
+                <input type="text" name="billCity" value={this.state.billCity} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="billState">Bill to State: <br></br>
+                <input type="text" name="billState" value={this.state.billState} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="billZip">Bill to Zip Code: <br></br>
+                <input type="text" name="billZip" value={this.state.billZip} onChange={this.handleTextChange} />
+              </label>
+            </form>
+          </div>
+          <div className="col-4 profileCreateBackground ">
+            <h3> Ship to info </h3>
+            <form className="createForm">
+              <label htmlFor="shipName">Ship to Name: <br></br>
+                <input type="text" name="shipName" value={this.state.shipName} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="shipAddr1">Ship to Address Line1: <br></br>
+                <input type="text" name="shipAddr1" value={this.state.shipAddr1} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="shipAddr2">Ship to Address Line2: <br></br>
+                <input type="text" name="shipAddr2" value={this.state.shipAddr2} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="shipCity">Ship to City: <br></br>
+                <input type="text" name="shipCity" value={this.state.shipCity} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="shipState">Ship to State: <br></br>
+                <input type="text" name="shipState" value={this.state.shipState} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <label htmlFor="shipZip">Ship to Zip Code: <br></br>
+                <input type="text" name="shipZip" value={this.state.shipZip} onChange={this.handleTextChange} />
+              </label>
+              <br></br>
+              <button type="button" className="btn btn-dark" onClick={this.shipToSameAsBillTo}>Ship to same as Bill to</button>
+            </form>
+          </div>
         </div>
-        <div className="col-4 profileCreateBackground ">
-          <h3> Ship to info </h3>
-          <form className="createForm">
-            <label htmlFor="shipName">Ship to Name: <br></br>
-              <input type="text" name="shipName" value={this.state.shipName} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="shipAddr1">Ship to Address Line1: <br></br>
-              <input type="text" name="shipAddr1" value={this.state.shipAddr1} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="shipAddr2">Ship to Address Line2: <br></br>
-              <input type="text" name="shipAddr2" value={this.state.shipAddr2} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="shipCity">Ship to City: <br></br>
-              <input type="text" name="shipCity" value={this.state.shipCity} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="shipState">Ship to State: <br></br>
-              <input type="text" name="shipState" value={this.state.shipState} onChange={this.handleTextChange} />
-            </label>
-            <br></br>
-            <label htmlFor="shipZip">Ship to Zip Code: <br></br>
-              <input type="text" name="shipZip" value={this.state.shipZip} onChange={this.handleTextChange} />
-            </label>
-
-            <br></br>
-
-
-     
-          </form>
-        </div>
-      </div>
       </div>
     )
   }
@@ -190,7 +199,7 @@ export default class ProfileCreate extends Component {
           <br></br>
           <br></br>
           <li>Company Name: {this.state.companyName}</li>
-          <li>Name: {this.state.name}</li>
+          <li>Name: {this.state.shipName}</li>
           <li>SHIPPING</li>
           <li>Address Line1: {this.state.shipAddr1}</li>
           <li>Address Line2: {this.state.shipAddr2}</li>
@@ -235,15 +244,15 @@ export default class ProfileCreate extends Component {
 
         <div className="wizard-nav">
           {this.state.step > 1 &&
-            <button type="button" class="btn btn-dark" Dark onClick={this.handleNavBackClick}>Previous</button>
+            <button type="button" className="btn btn-dark" onClick={this.handleNavBackClick}>Previous</button>
           }
 
           {this.state.step < 2 &&
-            <button type="button" class="btn btn-dark" Dark onClick={this.handleNavForwardClick}>Next</button>
+            <button type="button" className="btn btn-dark" onClick={this.handleNavForwardClick}>Next</button>
           }
 
           {this.state.step === 2 &&
-            <button type="button" class="btn btn-dark" Dark onClick={this.handleProfileCreate}>Create Profile</button>
+            <button type="button" className="btn btn-dark" onClick={this.handleProfileCreate}>Create Profile</button>
           }
         </div>
       </div>

@@ -24,8 +24,8 @@ export default class Home extends Component {
       <div className="row justify-content-center">
         <div className=" col-6 signUpHome">
           <h3>Customer Login/Sign Up</h3>
-          <Link className="btn btn-dark" Dark to="/profile/create">Create a profile</Link>
-          <Link className="btn btn-dark" Dark to="/login">Goto Login</Link>
+          <Link className="btn btn-dark" to="/profile/create">Create a profile</Link>
+          <Link className="btn btn-dark" to="/login">Goto Login</Link>
         </div>
       </div>
     )
