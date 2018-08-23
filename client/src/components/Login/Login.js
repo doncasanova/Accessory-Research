@@ -62,7 +62,7 @@ export default class Login extends Component {
 
 
   render() {
-    
+console.log(this.response)
     // if (this.state.customer !== null) {
     if (this.state.customer.email) {
       return<div >

@@ -9,13 +9,16 @@ import AmazonAdd from "../AmazonB"
 
 class ProductDescription extends Component {
   state = {
-    product: {}
+    product: {
+      shipping_weight: {}
+    }
   };
   // When this component mounts, grab the product with the _id of this.props.match.params.id
   // e.g. localhost:3000/products/599dcb67f0f16317844583fc
   componentDidMount() {
     API.getProduct(this.props.match.params.id)
       .then(res => this.setState({ product: res.data }))
+
       .catch(err => console.log(err));
   }
 
@@ -36,9 +39,9 @@ class ProductDescription extends Component {
                 <br></br>
                 <h5>Features: {this.state.product.features}</h5>
                 <p>Size: {this.state.product.size} <span>Price: ${Number.parseFloat(this.state.product.price).toFixed(2)}</span></p>
-                <p>Shipping Weight: {JSON.stringify(this.state.product.shipping_weight)}</p>
+                <p>Shipping Weight: {this.state.product.shipping_weight.value} {this.state.product.shipping_weight.units}</p>
                 <p>Product Family: {this.state.product.family}</p>
-                <p>Cart ID: {this.state.product.cart_id}</p>
+                {/* <p>Cart ID: {this.state.product.cart_id}</p> */}
               </div>
             </Col>
           </Row>

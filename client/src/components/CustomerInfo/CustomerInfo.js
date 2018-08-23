@@ -3,26 +3,34 @@ import axios from "axios";
 import Jumbotron from "../../components/Jumbotron";
 import { Container } from "../../components/Grid";
 import API from "../../utils/API";
+import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Redirect } from 'react-router'
 
 import './CustomerInfo.css';
 
 class CustomerInfo extends Component {
-  state = {
-    customer: {},
-    shipName: '',
-    shipAddr1: '',
-    shipAddr2: '',
-    shipCity: '',
-    shipState: '',
-    shipZip: '',
-    billName: '',
-    billAddr1: '',
-    billAddr2: '',
-    billCity: '',
-    billState: '',
-    billZip: ''
 
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      customer: {},
+      shipName: '',
+      shipAddr1: '',
+      shipAddr2: '',
+      shipCity: '',
+      shipState: '',
+      shipZip: '',
+      billName: '',
+      billAddr1: '',
+      billAddr2: '',
+      billCity: '',
+      billState: '',
+      billZip: ''
+  
+    };
+    this.logOut = this.logOut.bind(this);
+  }
+  
 
   // When this component mounts, grab the customer with the _id of this.props.match.params.id
   // e.g. localhost:3000/customers/599dcb67f0f16317844583fc
@@ -55,8 +63,7 @@ class CustomerInfo extends Component {
    
     })
     .then((response) => {
-    
-      this.setState({'redirect': `/customer/${response.data.user_id}`})
+      this.setState({'redirect': '/'})
     })
     .catch(function (error) {
       // display a state error message
@@ -70,12 +77,15 @@ class CustomerInfo extends Component {
     return (
       <Container fluid>
 
+      {this.state.redirect && (
+        <Redirect to={this.state.redirect} />
+      )}
 
         <Jumbotron>
           <div className=" row p-4 justify-content-center ">
             <h2>Welcome Back!&nbsp;{this.state.shipName} &nbsp; You've Logged In!</h2>
 
-            <button onClick={() => { this.logOut() }}>Log Out</button>
+            <Button onClick={() => { this.logOut() }}>Log Out</Button>
           </div>
           <div className=" row d-flex justify-content-center">
 
