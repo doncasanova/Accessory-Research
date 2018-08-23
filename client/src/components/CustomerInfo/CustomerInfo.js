@@ -30,6 +30,7 @@ class CustomerInfo extends Component {
   componentDidMount() {
     API.getCustomer(this.props.match.params.id) //"5b61135457150d66ee255b2a") // this.props.match.params.id (ToDo: currently hardcoded)
       .then(res => this.setState({
+        customer: this.state.billAddr1,
         customer: res.data,
         shipName: res.data.shippingAddress.name,
         shipAddr1: res.data.shippingAddress.addr1,

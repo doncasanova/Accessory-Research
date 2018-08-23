@@ -80,7 +80,6 @@ export default class Login extends Component {
         )}
 
         <form className="form-inline" onSubmit={this.handleSubmit}>
-            { JSON.stringify(this.state) }
                   <FormGroup className = "m-1" controlId="email" bsSize="large">
                     <ControlLabel>  Email  </ControlLabel>
                     <FormControl
