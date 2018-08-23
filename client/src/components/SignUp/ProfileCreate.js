@@ -115,7 +115,7 @@ export default class ProfileCreate extends Component {
           </div>
         </div>
         <div className="row justify-content-center" >
-          <div className="col-4 profileCreateBackground ">
+          <div className="col-3 profileCreateBackground ">
             <h3> Bill to info </h3>
             <form className="createForm">
               <label htmlFor="companyName">Company Name: <br></br>
@@ -147,7 +147,7 @@ export default class ProfileCreate extends Component {
               </label>
             </form>
           </div>
-          <div className="col-4 profileCreateBackground ">
+          <div className="col-3 profileCreateBackground ">
             <h3> Ship to info </h3>
             <form className="createForm">
               <label htmlFor="shipName">Ship to Name: <br></br>
@@ -173,6 +173,7 @@ export default class ProfileCreate extends Component {
               <label htmlFor="shipZip">Ship to Zip Code: <br></br>
                 <input type="text" name="shipZip" value={this.state.shipZip} onChange={this.handleTextChange} />
               </label>
+              <br></br>
               <br></br>
               <button type="button" className="btn btn-dark" onClick={this.shipToSameAsBillTo}>Ship to same as Bill to</button>
             </form>

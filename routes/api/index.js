@@ -48,6 +48,8 @@ router.get('/', (req, res) => {
   
   // LOGOUT (clear session data):
   router.get('/logout', (req, res) => {
+    console.log("log out route")
+    
     // Use passport's built-in method to log out the user
     req.logout();
     res.sendStatus(200);

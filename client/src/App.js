@@ -9,7 +9,7 @@ import NoMatch from "./components/NoMatch";
 import Login from "./components/Login";
 import Nav from "./components/Nav";
 import ProductDescription from './components/ProductDescription'
-
+import axios from "axios";
 
 
 import ProfileCreate from "./components/SignUp/ProfileCreate";
@@ -26,7 +26,7 @@ class App extends React.Component {
 
       <Router>
         <div>
-          <Nav />
+          <Nav/>
           <Switch>
             <Route exact path="/" component={MainPage} />
             <Route exact path="/products" component={AllProducts} />
@@ -43,6 +43,7 @@ class App extends React.Component {
           </Switch>
         </div>
       </Router>
+     
     );
   }
 }

@@ -30,7 +30,7 @@ class CustomerInfo extends Component {
   componentDidMount() {
     API.getCustomer(this.props.match.params.id) //"5b61135457150d66ee255b2a") // this.props.match.params.id (ToDo: currently hardcoded)
       .then(res => this.setState({
-        customer: this.state.billAddr1,
+        
         customer: res.data,
         shipName: res.data.shippingAddress.name,
         shipAddr1: res.data.shippingAddress.addr1,
@@ -44,10 +44,29 @@ class CustomerInfo extends Component {
         billCity: res.data.billingAddress.city,
         billState: res.data.billingAddress.state,
         billZip: res.data.billingAddress.zip
+        
       }))
+      
       .catch(err => console.log(err));
   }
+  
+  logOut = () => {
+    axios.get('/api/logout', {
+   
+    })
+    .then((response) => {
+    
+      this.setState({'redirect': `/customer/${response.data.user_id}`})
+    })
+    .catch(function (error) {
+      // display a state error message
+      console.log(error);
+    });
+  }
+
+
   render() {
+   
     return (
       <Container fluid>
 
@@ -56,6 +75,7 @@ class CustomerInfo extends Component {
           <div className=" row p-4 justify-content-center ">
             <h2>Welcome Back!&nbsp;{this.state.shipName} &nbsp; You've Logged In!</h2>
 
+            <button onClick={() => { this.logOut() }}>Log Out</button>
           </div>
           <div className=" row d-flex justify-content-center">
 
@@ -89,9 +109,9 @@ class CustomerInfo extends Component {
             </ul>
 
           </div>
+          
 
-
-          <button onClick={() => { axios.post("/api/ups", this.state) }}>testing ups route</button>
+          {/* <button onClick={() => { axios.post("/api/ups", this.state) }}>testing ups route</button> */}
         </Jumbotron>
 
       </Container>

@@ -17,19 +17,21 @@ export default class Login extends Component {
       password: "",
       customer: {}
     };
-    this.buttonWorks = this.buttonWorks.bind(this);
+    this.logIn = this.logIn.bind(this);
   }
 
-  buttonWorks = (email, password) => {
+  logIn = (email, password) => {
     axios.post('/api/login', {
       email: email,
       password: password
     })
     .then((response) => {
-      this.setState({'redirect': `/customer/${response.user_id}`})
+    
+      this.setState({'redirect': `/customer/${response.data.user_id}`})
     })
     .catch(function (error) {
       // display a state error message
+      alert("You have entered an invalid username or password")
       console.log(error);
     });
   }
@@ -68,7 +70,7 @@ export default class Login extends Component {
       <Link to="/"><button className="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button></Link>
       <ViewShoppingCart/>
       </form>
-      <Redirect to={"/customer/" + this.state.customer._id} />
+      {/* <Redirect to={"/customer/" + this.state.customer._id} /> */}
     </div>
     }
     return (
@@ -98,7 +100,7 @@ export default class Login extends Component {
                     />
             </FormGroup>
             <FormGroup className="m-3">
-                  <Button onClick={() => { this.buttonWorks(this.state.email, this.state.password)} }
+                  <Button onClick={() => { this.logIn(this.state.email, this.state.password)} }
                     block
                     bsSize="large"
                     disabled={!this.validateForm()}
