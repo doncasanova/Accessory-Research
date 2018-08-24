@@ -5,7 +5,6 @@ import ShoppingCart from '../PayPal/shoppingCart.js';
 import API from "../../utils/API";
 import './ProductDescription.css';
 import AmazonAdd from "../AmazonB";
-import { Button } from "react-bootstrap";
 
 
 class ProductDescription extends Component {
@@ -31,7 +30,6 @@ class ProductDescription extends Component {
             <Col size="md-4 sm-12 d-flex align-items-start">
               <img className="product-image productImage" src={this.state.product.images} alt={this.state.product.name}></img>
               <ShoppingCart cart_id={this.state.product.cart_id || 0} />
-              {/* <Button onClick={() => { console.log(this.state.product.sds) }}>SDS</Button> */}
               <a href={this.state.product.sds} target="_blank">SDS</a>
             </Col>
             <Col size="md-8 sm-12 d-flex align-items-right">
