@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from 'react-router'
 import { Link } from "react-router-dom";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import ViewShoppingCart from "../../components/PayPal/ViewShoppingCart.js"
+// import ViewShoppingCart from "../../components/PayPal/ViewShoppingCart.js"
 import "./Login.css";
 import API from "../../utils/API";
 import axios from "axios";
@@ -15,9 +15,12 @@ export default class Login extends Component {
     this.state = {
       email: "",
       password: "",
-      customer: {}
+      customer: {},
+      isLoggedIn: false,
     };
     this.logIn = this.logIn.bind(this);
+    this.logOut = this.logOut.bind(this);
+    // this.checkIfLoggedIn = this.checkIfLoggedIn.bind(this);
   }
 
   logIn = (email, password) => {
@@ -26,8 +29,10 @@ export default class Login extends Component {
       password: password
     })
     .then((response) => {
-    
       this.setState({'redirect': `/customer/${response.data.user_id}`})
+      this.setState({'customer': response.data})
+      // this.checkIfLoggedIn();
+      this.setState({ isLoggedIn : true})
     })
     .catch(function (error) {
       // display a state error message
@@ -60,61 +65,119 @@ export default class Login extends Component {
     )
   }
 
+  // componentDidUpdate() {
+  //   // this.checkIfLoggedIn();
+  //   this.setState({ isLoggedIn : false});
+  // }
+
+  // setLogOutState(event) {
+  //   this.setState({ isLoggedIn : false});
+  // }
+
+  // checkIfLoggedIn = () => {
+  //   console.log('checking....');
+  //   var result;
+  //   axios.get('/api/check-login')
+  //   .then((resp) => {
+  //     console.log('resp is', resp);
+  //     // return true;
+  //     if (resp.data.status) {
+  //       console.log("logged in!")
+  //       this.setState({ isLoggedIn : true})
+  //     } else {
+  //       console.log('not logged in!')
+  //       this.setState({ isLoggedIn : false})
+  //     }
+  //   })
+  //   .catch(function(err) {
+  //     console.log('err is ', err);
+  //     // result = false;
+  //   })
+  // }
+  logOut = (response) => {
+    console.log("logOut")
+    axios.get('/api/logout', {
+   
+    })
+    .then((response) => {
+      console.log(response)
+      this.setState({ isLoggedIn : false});
+      this.setState({'redirect': '/'})
+    })
+    .catch(function (error) {
+      // display a state error message
+      console.log(error);
+    });
+  }
+
 
   render() {
-console.log(this.response)
-    // if (this.state.customer !== null) {
-    if (this.state.customer.email) {
-      return<div >
-      <form className = " userLogIn form-inline"><h3> Welcome Back: {this.state.customer.email}</h3>
-      <Link to="/"><button className="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button></Link>
-      <ViewShoppingCart/>
+   console.log("Logged in " + this.state.isLoggedIn )
+    if (this.state.isLoggedIn) {
+      
+      return <div >
+      <form className = " userLogIn form-inline"><h3> Welcome Back: {this.state.email}</h3>
+      <Button onClick={() => { this.logOut() }}>Log Out</Button>
+      {/* <ViewShoppingCart/> */}
       </form>
-      {/* <Redirect to={"/customer/" + this.state.customer._id} /> */}
     </div>
-    }
-    return (
+    
+    }else
 
-      <div>
-      
-        {this.state.redirect && (
-          <Redirect to={this.state.redirect} />
-        )}
+    {this.state.redirect && (
+      <Redirect to={this.state.redirect} />
+    )}
+    
+    {
 
-        <form className="form-inline" onSubmit={this.handleSubmit}>
-                  <FormGroup className = "m-1" controlId="email" bsSize="large">
-                    <ControlLabel>  Email  </ControlLabel>
-                    <FormControl
-                      autoFocus
-                      type="email"
-                      value={this.state.email}
-                      onChange={this.handleChange}
-                    />
+      return (
+        
+
+        <div>
+        
+          {this.state.redirect && (
+            <Redirect to={this.state.redirect} />
+          )}
+  
+          <form className="form-inline" onSubmit={this.handleSubmit}>
+                    <FormGroup className = "m-1" controlId="email" bsSize="large">
+                      <ControlLabel>  Email  </ControlLabel>
+                      <FormControl
+                        autoFocus
+                        type="email"
+                        value={this.state.email}
+                        onChange={this.handleChange}
+                      />
+                </FormGroup>
+              <FormGroup className="m-1" controlId="password" bsSize="large">
+                      <ControlLabel>  Password  </ControlLabel>
+                      <FormControl
+                        value={this.state.password}
+                        onChange={this.handleChange}
+                        type="password"
+                      />
               </FormGroup>
-            <FormGroup className="m-1" controlId="password" bsSize="large">
-                    <ControlLabel>  Password  </ControlLabel>
-                    <FormControl
-                      value={this.state.password}
-                      onChange={this.handleChange}
-                      type="password"
-                    />
-            </FormGroup>
-            <FormGroup className="m-3">
-                  <Button onClick={() => { this.logIn(this.state.email, this.state.password)} }
-                    block
-                    bsSize="large"
-                    disabled={!this.validateForm()}
-                  >
-                  
-                    Login
-                  </Button>
-             </FormGroup>
-            
-             <Link to="/profile/create"><button className="btn btn-outline-success my-2 my-sm-0" type="submit">Create Account</button></Link>
-             
-                </form>
-      
-      </div>
-    )
+              <FormGroup className="m-3">
+                    <Button onClick={() => { this.logIn(this.state.email, this.state.password,)} }
+                      block
+                      bsSize="large"
+                      disabled={!this.validateForm()}
+                    >
+                    
+                      Login
+                    </Button>
+               </FormGroup>
+              
+               <Link to="/profile/create"><Button className="btn btn-outline-success my-2 my-sm-0" type="submit">Create Account</Button></Link>
+               
+                  </form>
+        
+        </div>
+      )
+
+
+
+    }
+   
   }
 }

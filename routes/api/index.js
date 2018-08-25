@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
     if (req.isAuthenticated()) {
       res.send(req.user);
     } else {
-      res.sendStatus(403);
+      res.send({});
     }
   });
   
@@ -31,7 +31,6 @@ router.get('/', (req, res) => {
     const email = req.body.email;
     const password = encryptLib.encryptPassword(req.body.password);
     const newCustomer = new Customer({ email, password });
-    console.log(email, password, "register")
     newCustomer.save()
       .then(() => {
         res.sendStatus(201);
@@ -45,11 +44,16 @@ router.get('/', (req, res) => {
       user_id: req.user._id
     }); 
   });
+
+  router.get('/check-login', (req, res) => {
+    res.json({
+      status: !!req.user,
+      user: req.user
+    });
+  });
   
   // LOGOUT (clear session data):
   router.get('/logout', (req, res) => {
-    console.log("log out route")
-    
     // Use passport's built-in method to log out the user
     req.logout();
     res.sendStatus(200);

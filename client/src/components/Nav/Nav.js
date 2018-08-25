@@ -16,6 +16,9 @@ class Nav extends Component {
       collapsed: !this.state.collapsed,
     });
   }
+
+  
+
   render(props) {
     const collapsed = this.state.collapsed;
     const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';

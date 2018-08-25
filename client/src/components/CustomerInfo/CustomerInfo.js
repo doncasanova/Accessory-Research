@@ -28,7 +28,6 @@ class CustomerInfo extends Component {
       billZip: ''
   
     };
-    this.logOut = this.logOut.bind(this);
   }
   
 
@@ -58,34 +57,15 @@ class CustomerInfo extends Component {
       .catch(err => console.log(err));
   }
   
-  logOut = () => {
-    axios.get('/api/logout', {
-   
-    })
-    .then((response) => {
-      this.setState({'redirect': '/'})
-    })
-    .catch(function (error) {
-      // display a state error message
-      console.log(error);
-    });
-  }
-
-
   render() {
    
     return (
       <Container fluid>
-
-      {this.state.redirect && (
-        <Redirect to={this.state.redirect} />
-      )}
-
         <Jumbotron>
           <div className=" row p-4 justify-content-center ">
             <h2>Welcome Back!&nbsp;{this.state.shipName} &nbsp; You've Logged In!</h2>
 
-            <Button onClick={() => { this.logOut() }}>Log Out</Button>
+            {/* <Button onClick={() => { this.logOut() }}>Log Out</Button> */}
           </div>
           <div className=" row d-flex justify-content-center">
 
