@@ -9,7 +9,6 @@ import NoMatch from "./components/NoMatch";
 import Login from "./components/Login";
 import Nav from "./components/Nav";
 import ProductDescription from './components/ProductDescription'
-import axios from "axios";
 
 
 import ProfileCreate from "./components/SignUp/ProfileCreate";
