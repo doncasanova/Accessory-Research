@@ -98,7 +98,7 @@ export default class ProfileCreate extends Component {
   renderDemographicsForm() {
     return (
       <div>
-        <div className="row justify-content-center " >
+        <div className="row d-flex justify-content-center " >
           <div className="profileCreateEmail ">
             <form className="createForm form-inline">
               <label className="m-1" htmlFor="email">Email: <br></br>
@@ -114,64 +114,64 @@ export default class ProfileCreate extends Component {
             </form>
           </div>
         </div>
-        <div className="row justify-content-center" >
-          <div className="col-3 profileCreateBackground ">
+        <div className="row d-flex justify-content-center" >
+          <div className="col-4 profileCreateBackground ">
             <h3> Bill to info </h3>
             <form className="createForm">
               <label htmlFor="companyName">Company Name: <br></br>
-                <input type="text" name="companyName" value={this.state.companyName} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="companyName" value={this.state.companyName} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="billName">Bill to Name: <br></br>
-                <input type="text" name="billName" value={this.state.billName} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="billName" value={this.state.billName} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="billAddr1">Bill to Address Line1: <br></br>
-                <input type="text" name="billAddr1" value={this.state.billAddr1} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="billAddr1" value={this.state.billAddr1} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="billAddr2">Bill to Address Line2: <br></br>
-                <input type="text" name="billAddr2" value={this.state.billAddr2} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="billAddr2" value={this.state.billAddr2} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="billCity" >Bill to City: <br></br>
-                <input type="text" name="billCity" value={this.state.billCity} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="billCity" value={this.state.billCity} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="billState">Bill to State: <br></br>
-                <input type="text" name="billState" value={this.state.billState} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="billState" value={this.state.billState} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="billZip">Bill to Zip Code: <br></br>
-                <input type="text" name="billZip" value={this.state.billZip} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="billZip" value={this.state.billZip} onChange={this.handleTextChange} />
               </label>
             </form>
           </div>
-          <div className="col-3 profileCreateBackground ">
+          <div className="col-4 profileCreateBackground ">
             <h3> Ship to info </h3>
             <form className="createForm">
               <label htmlFor="shipName">Ship to Name: <br></br>
-                <input type="text" name="shipName" value={this.state.shipName} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control"  name="shipName" value={this.state.shipName} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="shipAddr1">Ship to Address Line1: <br></br>
-                <input type="text" name="shipAddr1" value={this.state.shipAddr1} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="shipAddr1" value={this.state.shipAddr1} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="shipAddr2">Ship to Address Line2: <br></br>
-                <input type="text" name="shipAddr2" value={this.state.shipAddr2} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control"name="shipAddr2" value={this.state.shipAddr2} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="shipCity">Ship to City: <br></br>
-                <input type="text" name="shipCity" value={this.state.shipCity} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="shipCity" value={this.state.shipCity} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="shipState">Ship to State: <br></br>
-                <input type="text" name="shipState" value={this.state.shipState} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="shipState" value={this.state.shipState} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <label htmlFor="shipZip">Ship to Zip Code: <br></br>
-                <input type="text" name="shipZip" value={this.state.shipZip} onChange={this.handleTextChange} />
+                            <input type="text" className="form-control" name="shipZip" value={this.state.shipZip} onChange={this.handleTextChange} />
               </label>
               <br></br>
               <br></br>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "./api";
-import "./home.css"
+import "./home.css";
 const api = new API();
 
 export default class Home extends Component {

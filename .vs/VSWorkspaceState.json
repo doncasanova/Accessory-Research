@@ -2,14 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\client",
+    "\\client\\build",
     "\\client\\public",
     "\\client\\src",
     "\\client\\src\\components",
-    "\\client\\src\\components\\images",
-    "\\client\\src\\pages",
-    "\\client\\src\\pages\\Books",
-    "\\client\\src\\pages\\Detail"
+    "\\client\\src\\components\\CustomerInfo",
+    "\\client\\src\\components\\SignUp",
+    "\\modules"
   ],
-  "SelectedNode": "\\client\\src\\pages\\Detail\\Products.js",
+  "SelectedNode": "\\client\\src\\components\\SignUp\\ProfileCreate.js",
   "PreviewInSolutionExplorer": false
 }

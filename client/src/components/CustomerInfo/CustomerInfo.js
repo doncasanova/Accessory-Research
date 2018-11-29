@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import axios from "axios";
+//import axios from "axios";
 import Jumbotron from "../../components/Jumbotron";
 import { Container } from "../../components/Grid";
 import API from "../../utils/API";
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import { Redirect } from 'react-router'
+//import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+//import { Redirect } from 'react-router'
 
 import './CustomerInfo.css';
 

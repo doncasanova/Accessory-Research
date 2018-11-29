@@ -17,9 +17,9 @@ export default class ProfilePage extends Component {
     const profileFromApi = api.getProfileByName(this.props.match.params.id);
 
     if (profileFromApi) {
-      this.setState({ profile: profileFromApi })
+        this.setState({ profile: profileFromApi });
     } else {
-      this.setState({ error: true });
+        this.setState({ error: true });
     }
   }
 
