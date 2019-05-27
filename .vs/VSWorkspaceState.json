@@ -9,8 +9,9 @@
     "\\client\\public",
     "\\client\\src",
     "\\client\\src\\components",
-    "\\client\\src\\components\\Product"
+    "\\client\\src\\components\\Grid",
+    "\\client\\src\\components\\SignUp"
   ],
-  "SelectedNode": "\\client\\src\\components\\Product\\Product.css",
+  "SelectedNode": "\\client\\src\\components\\SignUp\\Home.js",
   "PreviewInSolutionExplorer": false
 }
