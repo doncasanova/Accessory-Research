@@ -3,13 +3,14 @@
     "",
     "\\client",
     "\\client\\build",
+    "\\client\\build\\images",
+    "\\client\\build\\static",
+    "\\client\\build\\static\\css",
     "\\client\\public",
     "\\client\\src",
     "\\client\\src\\components",
-    "\\client\\src\\components\\CustomerInfo",
-    "\\client\\src\\components\\SignUp",
-    "\\modules"
+    "\\client\\src\\components\\Product"
   ],
-  "SelectedNode": "\\client\\src\\components\\SignUp\\ProfileCreate.js",
+  "SelectedNode": "\\client\\src\\components\\Product\\Product.css",
   "PreviewInSolutionExplorer": false
 }
