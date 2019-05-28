@@ -9,7 +9,6 @@
     "\\client\\public",
     "\\client\\src",
     "\\client\\src\\components",
-    "\\client\\src\\components\\Grid",
     "\\client\\src\\components\\SignUp"
   ],
   "SelectedNode": "\\client\\src\\components\\SignUp\\Home.js",
