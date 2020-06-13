@@ -3,14 +3,12 @@
     "",
     "\\client",
     "\\client\\build",
-    "\\client\\build\\images",
-    "\\client\\build\\static",
-    "\\client\\build\\static\\css",
     "\\client\\public",
     "\\client\\src",
     "\\client\\src\\components",
-    "\\client\\src\\components\\SignUp"
+    "\\client\\src\\components\\SignUp",
+    "\\models"
   ],
-  "SelectedNode": "\\client\\src\\components\\SignUp\\Home.js",
+  "SelectedNode": "\\client\\public\\favicon.ico",
   "PreviewInSolutionExplorer": false
 }
