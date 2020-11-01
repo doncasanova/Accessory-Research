@@ -2,13 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\client",
-    "\\client\\build",
-    "\\client\\public",
-    "\\client\\src",
-    "\\client\\src\\components",
-    "\\client\\src\\components\\SignUp",
-    "\\models"
+    "\\client\\build"
   ],
-  "SelectedNode": "\\client\\public\\favicon.ico",
+  "SelectedNode": "\\server.js",
   "PreviewInSolutionExplorer": false
 }

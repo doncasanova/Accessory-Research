@@ -25,10 +25,17 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
+
+//test
+
+
+//endtest
+
+
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/accessory-research");
 //mongoose.connect("mongodb://localhost/accessory-research");
-
+console.log("test");
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

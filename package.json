@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "Accessory-Research",
   "version": "1.0.0",
-  "description": "react app",
+  "description": "Accessory-Research",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
